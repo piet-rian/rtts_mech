@@ -2,8 +2,8 @@
 
 ## Acknowledgment, References
 
-- 実装の参考にしたModを記述
-- 貢献を受け取った場合は貢献の提供者名を記述
+- [AF · Mech Fox](https://steamcommunity.com/sharedfiles/filedetails/?id=3015998297)
+- [Hover Hauler](https://steamcommunity.com/sharedfiles/filedetails/?id=3209529782)
 
 ## Third Party License
 
