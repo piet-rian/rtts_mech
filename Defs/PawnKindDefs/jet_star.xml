@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnKindDef ParentName="LightMechanoidKind">
+    <defName>RTTS_Mech_jet_star</defName>
+    <label>jet star</label>
+    <race>RTTS_Mech_jet_star</race>
+    <defaultFactionType>PlayerColony</defaultFactionType> <!-- Player Only -->
+    <controlGroupPortraitZoom>2.0</controlGroupPortraitZoom>
+    <minGenerationAge>0</minGenerationAge>
+    <combatPower>20</combatPower>
+
+    <!-- ライフステージごとの指定 -->
+    <lifeStages>
+      <li>
+        <bodyGraphicData> <!-- メカノイド(生体?)のグラフィック定義 -->
+          <texPath>Races/JetStar/New</texPath>
+          <maskPath>Races/JetStar/Mask</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <corpseGraphicData> <!--  メカノイド(死体)のグラフィック定義 -->
+          <texPath>Races/JetStar/DeathNew</texPath>
+          <drawSize>1</drawSize>
+        </corpseGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Races/JetStar/Old</texPath>
+          <maskPath>Races/JetStar/Mask</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <corpseGraphicData>
+          <texPath>Races/JetStar/DeathOld</texPath>
+          <drawSize>1</drawSize>
+        </corpseGraphicData>
+      </li>
+    </lifeStages>
+
+    <!-- メカノイドが使用可能なアビリティの定義 -->
+    <abilities>
+      <!--なし -->
+    </abilities>
+
+    <!-- 使用する武器を価格で制限 -->
+    <weaponMoney>9999~9999</weaponMoney>
+    <weaponTags>
+      <!-- なのだが、このメカノイドは素手メカノイドなので、使用可能武器タグと含めて意味がない -->
+    </weaponTags>
+
+    <!-- 付与される義体の価値、らしい -->
+    <techHediffsMoney>9999~9999</techHediffsMoney>
+    <techHediffsChance>1</techHediffsChance>
+
+    <!-- それぞれの指定の意味はなんとなくわかるが、詳しいことがわからない部分 -->
+    <isFighter>false</isFighter>
+    <aiAvoidCover>true</aiAvoidCover>
+    <destroyGearOnDrop>true</destroyGearOnDrop>
+    <canStrip>false</canStrip>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+  </PawnKindDef>
+
+</Defs>

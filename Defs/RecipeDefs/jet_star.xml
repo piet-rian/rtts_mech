@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 培養時のレシピ -->
+  <RecipeDef>
+    <defName>RTTS_Mech_Recipe_JetStar</defName>
+    <label>gestate JetStar</label>
+    <description>Gestate a JetStar</description>
+    <jobString>Gestating JetStar.</jobString>
+
+    <!-- 説明文からリンクされる対象 -->
+    <descriptionHyperlinks>
+      <ThingDef>RTTS_Mech_jet_star</ThingDef> <!-- 培養されるメカノイドを指定してある -->
+    </descriptionHyperlinks>
+
+    <!-- 前提研究 -->
+    <researchPrerequisites>
+      <li>StandardMechtech</li>
+      <li>RTTS_RESEARCH_PROJECT_1T</li> <!-- RTTS側の前提研究も必要とする -->
+    </researchPrerequisites>
+
+    <workAmount>900</workAmount> <!-- 培養開始時の作業量 -->
+    <gestationCycles>1</gestationCycles> <!-- 培養サイクル数 -->
+    <formingTicks>30000</formingTicks> <!-- 培養サイクル一回あたりの時間, 半日ぐらい -->
+    <mechanitorOnlyRecipe>true</mechanitorOnlyRecipe> <!-- メカニターのみが使用可能なレシピ -->
+    <workSpeedStat>MechFormingSpeed</workSpeedStat> <!-- 作業速度のステータス -->
+    <soundWorking>MechGestatorCycle_Initiating</soundWorking> <!-- 培養開始時の音 -->
+
+    <!-- レシピの使用者(作業台) -->
+    <recipeUsers>
+      <li>MechGestator</li>
+    </recipeUsers>
+
+    <!-- 素材 -->
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RTTS_STAR_PIECE</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+
+    <!-- 成果物(本レシピの場合は培養されるメカノイド) -->
+    <products>
+      <RTTS_Mech_jet_star>1</RTTS_Mech_jet_star>
+    </products>
+  </RecipeDef>
+
+</Defs>
