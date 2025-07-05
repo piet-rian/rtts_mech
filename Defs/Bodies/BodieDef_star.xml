@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Hover-Hauler をほとんどそのまま転用 -->
+
+  <!--
+    parts の木構造は以下の通り
+      MechanicalThoraxCanManipulate(corePart) [胸部]
+      ├─ MechanicalNeck [首]
+      │   └─ MechanicalHead [頭部]
+      │       ├─ ArtificialBrain [脳]
+      │       ├─ SightSensor (left) [左目]
+      │       ├─ SightSensor (right) [右目]
+      │       ├─ HearingSensor (left) [左耳]
+      │       ├─ HearingSensor (right) [右耳]
+      │       └─ SmellSensor [鼻]
+      ├─ MechanicalLeg (front left wing) [前左脚]
+      │   └─ MechanicalFoot (front left sensor) [前左足]
+      ├─ MechanicalLeg (front right wing) [前右脚]
+      │   └─ MechanicalFoot (front right sensor) [前右足]
+      ├─ MechanicalLeg (rear left wing) [後左脚]
+      │   └─ MechanicalFoot (rear left sensor) [後左足]
+      ├─ MechanicalLeg (rear right wing) [後右脚]
+      │   └─ MechanicalFoot (rear right sensor) [後右足]
+      ├─ Reactor [リアクター]
+      ├─ FluidReprocessor [流体再処理器]
+      └─ FluidReprocessor [流体再処理器]
+  -->
+  <BodyDef>
+    <defName>RTTS_Mech_Body_WorkableStar</defName>
+    <label>WorkableStar Body</label>
+    <corePart>
+      <def>MechanicalThoraxCanManipulate</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>MechanicalNeck</def>
+          <coverage>0.10</coverage>
+          <height>Top</height>
+          <parts>
+            <li>
+              <def>MechanicalHead</def>
+              <coverage>0.80</coverage>
+              <groups>
+                <!-- `//ThingDef[defName="RTTS_Mech_alpha_star"]/race/tools` で参照されていて、この部位で殴ってる扱いになる -->
+                <li>HeadAttackTool</li>
+              </groups>
+              <parts>
+                <li>
+                  <def>ArtificialBrain</def>
+                  <coverage>0.10</coverage>
+                  <depth>Inside</depth>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>left sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>SightSensor</def>
+                  <customLabel>right sight sensor</customLabel>
+                  <coverage>0.13</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>left hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>HearingSensor</def>
+                  <customLabel>right hearing sensor</customLabel>
+                  <coverage>0.10</coverage>
+                </li>
+                <li>
+                  <def>SmellSensor</def>
+                  <coverage>0.10</coverage>
+                </li>
+              </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>front left wing</customLabel>
+          <coverage>0.16</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>front left sensor</customLabel>
+              <coverage>0.5</coverage>
+              <groups>
+                <li>FrontLeftLeg</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>front right wing</customLabel>
+          <coverage>0.16</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>front right sensor</customLabel>
+              <coverage>0.5</coverage>
+              <groups>
+                <li>FrontRightLeg</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>rear left wing</customLabel>
+          <coverage>0.16</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>rear left sensor</customLabel>
+              <coverage>0.5</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>MechanicalLeg</def>
+          <customLabel>rear right wing</customLabel>
+          <coverage>0.16</coverage>
+          <height>Bottom</height>
+          <parts>
+            <li>
+              <def>MechanicalFoot</def>
+              <customLabel>rear right sensor</customLabel>
+              <coverage>0.5</coverage>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Reactor</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>FluidReprocessor</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+</Defs>

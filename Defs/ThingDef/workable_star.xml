@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- mechfoxのspiritの方の定義をベースに改造する、英文コメントが残っているのはコピペの名残 -->
+
+  <ThingDef ParentName="RTTS_Mech_star">
+    <defName>RTTS_Mech_alpha_star</defName>
+    <label>alpha star</label>
+
+    <!-- memo.
+      description においてはカラータグ `<color=#FF0000>xxx</color>` で色を変えられる
+      ただし、 <> は &lt; &gt; に直す必要あり
+    -->
+    <description>TODO
+      \n\n&lt;color=#808080&gt;TODO&lt;/color&gt;
+      \n&lt;color=#808080&gt;TODO&lt;/color&gt;</description>
+
+    <statBases>
+      <MarketValue>750</MarketValue> <!-- 市場価値 -->
+      <MoveSpeed>6.50</MoveSpeed> <!-- 移動速度, 8.0を超えると経路計算的な負荷が上がるという話を何処かで見聞きしている -->
+
+      <!-- 許容温度設定 -->
+      <ComfyTemperatureMin>-273</ComfyTemperatureMin>
+      <ComfyTemperatureMax>255</ComfyTemperatureMax>
+
+      <!-- ダメージ種別ごとの軽減率 -->
+      <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Heat>2.00</ArmorRating_Heat>
+
+      <BandwidthCost>2</BandwidthCost> <!-- 要求帯域幅 -->
+      <ControlTakingTime>4</ControlTakingTime> <!-- 制御取り戻しにかかる時間 -->
+      <MechEnergyLossPerHP>0.10</MechEnergyLossPerHP> <!-- HPあたりのエネルギー損失(多分回復時のやつ) -->
+      <WastepacksPerRecharge>1</WastepacksPerRecharge> <!-- 再充電あたりの廃棄物パック算出量 -->
+      <MeleeDodgeChance>40</MeleeDodgeChance> <!-- 近接回避率 -->
+    </statBases>
+
+    <!-- 解体時の算出 -->
+    <butcherProducts>
+      <RTTS_STAR_PIECE>30</RTTS_STAR_PIECE>
+    </butcherProducts>
+
+    <!-- 種族定義 -->
+    <race>
+      <body>RTTS_Mech_Body_WorkableStar</body> <!-- `BodyDef_star.xml` で定義されているボディ -->
+      <mechWeightClass>Light</mechWeightClass> <!-- メカの重量クラス -->
+      <baseBodySize>0.40</baseBodySize> <!-- 体格、1下回ってると運搬能力にマイナス補正 -->
+      <baseHealthScale>0.8</baseHealthScale> <!-- 基本HP倍率 -->
+
+      <!-- 実施可能な作業の定義 -->
+      <mechEnabledWorkTypes>
+        <!-- TODO: 複数メカに分散させる予定だった作業を全部詰め込んである、そもそも分散が必要かどうかの再検討が必要 -->
+        <li>Firefighter</li><!-- 消火 -->
+        <li>BasicWorker</li><!-- 雑用 -->
+        <li>PlantCutting</li><!-- 採集伐採 -->
+        <li>Growing</li> <!-- 栽培 -->
+        <li>Construction</li> <!-- 建設・解体 -->
+        <li>Mining</li> <!-- 採掘 -->
+        <li>Hauling</li> <!-- 運搬 -->
+        <li>Cleaning</li> <!-- 清掃 -->
+      </mechEnabledWorkTypes>
+
+      <!-- 優先順位 -->
+      <mechWorkTypePriorities>
+        <Firefighter>1</Firefighter>
+        <BasicWorker>1</BasicWorker>
+        <PlantCutting>1</PlantCutting>
+        <Growing>2</Growing>
+        <Construction>3</Construction>
+        <Mining>3</Mining>
+        <Hauling>4</Hauling>
+        <Cleaning>4</Cleaning>
+      </mechWorkTypePriorities>
+    </race>
+
+    <!-- 装備なし近接攻撃時の内容定義 -->
+    <tools>
+      <li>
+        <!-- カドによる頭突き(emp) -->
+        <label>star edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>0.9</cooldownTime>
+        <armorPenetration>0.18</armorPenetration>
+        <chanceFactor>1.0</chanceFactor>
+        <extraMeleeDamages>
+          <li>
+            <def>EMP</def>
+            <amount>24</amount>
+          </li>
+        </extraMeleeDamages>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup> <!-- 体のどこのパーツ群で殴っている扱いにしているのか -->
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+
+    <!-- ダメージ種別ごとの軽減率 -->
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.50</multiplier>
+      </li>
+      <li>
+        <damageDef>BombSuper</damageDef>
+        <multiplier>0.10</multiplier>
+      </li>
+      <li>
+        <damageDef>Flame</damageDef>
+        <multiplier>0.00</multiplier>
+      </li>
+    </damageMultipliers>
+
+    <!-- レシピとか研究欄とかで表示されるアイコンとその拡大スケール -->
+    <uiIconPath>UI/WorkableStar</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+  </ThingDef>
+
+
+</Defs>

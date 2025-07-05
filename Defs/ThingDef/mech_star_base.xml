@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 星型メカノイドの共通定義 -->
+  <ThingDef Abstract="True" Name="RTTS_Mech_star" ParentName="BasePawn">
+    <statBases>
+      <PsychicSensitivity>1.00</PsychicSensitivity> <!-- 精神感応性 -->
+      <Flammability>0</Flammability> <!-- 可燃性 -->
+      <MeatAmount>0</MeatAmount> <!-- 解体時の肉の量 -->
+      <ToxicResistance>1.00</ToxicResistance> <!-- 毒耐性 -->
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance> <!-- 毒環境耐性 -->
+      <WorkSpeedGlobal>3</WorkSpeedGlobal> <!-- 作業速度 3で概ねさん倍 -->
+    </statBases>
+
+    <receivesSignals>true</receivesSignals>
+    <tradeability>None</tradeability> <!-- 取引不可 -->
+
+    <race>
+      <!-- 音周りの定義 -->
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+
+      <!-- 作業が可能なメカノイドとして定義 -->
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <thinkTreeConstant>MechConstant</thinkTreeConstant>
+
+      <nameGenerator>NamerMech</nameGenerator>
+      <fleshType>Mechanoid</fleshType> <!-- 肉(体)の種類 -->
+
+      <needsRest>false</needsRest> <!-- 休息の必要なし(睡眠欲求の無効化？) -->
+      <hasGenders>false</hasGenders> <!-- 性別なし(メカなので) -->
+      <foodType>None</foodType> <!-- 食事の必要なし(食欲の無効化？) -->
+      <lifeExpectancy>2500</lifeExpectancy> <!-- 平均寿命(メカなので長めに) -->
+      <bloodDef>Filth_MachineBits</bloodDef> <!-- 血液の定義(メカなので機械の破片)(怪我したときとかに周囲に撒き散らすあれこれの定義？) -->
+
+      <!-- 内容がよくわからんが音系統 -->
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+
+      <!-- ライフステージ(生命ポーンだと子どもとか大人とかの定義だが、メカなので子どもも大人もない) -->
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundCall>NOTG</soundCall>
+          <soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+        </li>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundCall>NOTG</soundCall>
+          <soundWounded>Pawn_Mech_Militor_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Militor_Death</soundDeath>
+        </li>
+      </lifeStageAges>
+    </race>
+
+    <comps>
+      <li Class="CompProperties_CanBeDormant" /> <!-- 休眠可能, メカクラ等での登場時に寝れるかみたいな設定？ -->
+      <li Class="CompProperties_MechRepairable" /> <!-- 修理可能, メカニターが修理できるかどうかの設定？ -->
+      <li Class="CompProperties_WakeUpDormant"> <!-- 休眠からの覚醒ルール -->
+        <wakeUpOnDamage>true</wakeUpOnDamage>
+        <wakeUpCheckRadius>30</wakeUpCheckRadius>
+        <wakeUpSound>MechanoidsWakeUp</wakeUpSound>
+      </li>
+      <li Class="CompProperties_OverseerSubject"> <!-- 制御下からの脱出ルール？ -->
+        <needsOverseerEffect>MechUncontrolled</needsOverseerEffect>
+        <delayUntilFeralCheck>60000</delayUntilFeralCheck>
+        <feralMtbDays>999</feralMtbDays>
+        <feralCascadeRadialDistance>25</feralCascadeRadialDistance>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
