@@ -120,7 +120,7 @@
     </damageMultipliers>
 
     <!-- レシピとか研究欄とかで表示されるアイコンとその拡大スケール -->
-    <uiIconPath>UI/WorkableStar</uiIconPath>
+    <uiIconPath>UI/JetStar</uiIconPath>
     <uiIconScale>1</uiIconScale>
   </ThingDef>
 
