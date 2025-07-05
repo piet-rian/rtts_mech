@@ -50,6 +50,7 @@
       <!-- 実施可能な作業の定義 -->
       <mechEnabledWorkTypes>
         <li>Firefighter</li><!-- 消火 -->
+        <li>BasicWorker</li><!-- 雑用 -->
         <li>Hauling</li> <!-- 運搬 -->
       </mechEnabledWorkTypes>
 

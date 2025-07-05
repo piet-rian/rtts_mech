@@ -25,4 +25,4 @@
 
 ### `jet star` 関連画像
 
-- <https://www.flaticon.com/free-icon/speech-bubble_1948378>
+- <https://www.flaticon.com/free-icon/star_3640329>
