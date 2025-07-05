@@ -19,6 +19,10 @@
 
 - <https://www.flaticon.com/free-icon/star_560896>
 
+### `work star gamma`
+
+- <https://www.flaticon.com/free-icon/star_6024823>
+
 ### `jet star` 関連画像
 
 - <https://www.flaticon.com/free-icon/speech-bubble_1948378>
