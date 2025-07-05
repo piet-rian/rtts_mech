@@ -50,9 +50,7 @@
       <!-- 実施可能な作業の定義 -->
       <mechEnabledWorkTypes>
         <li>Firefighter</li><!-- 消火 -->
-        <li>BasicWorker</li><!-- 雑用 -->
         <li>Hauling</li> <!-- 運搬 -->
-        <li>Cleaning</li> <!-- 清掃 -->
       </mechEnabledWorkTypes>
 
       <!-- 優先順位 -->
@@ -60,18 +58,17 @@
         <Firefighter>1</Firefighter>
         <BasicWorker>1</BasicWorker>
         <Hauling>4</Hauling>
-        <Cleaning>4</Cleaning>
       </mechWorkTypePriorities>
     </race>
 
     <comps>
       <li Class="CompProperties_ProjectileInterceptor">
-        <radius>1.1</radius>
+        <radius>1.0</radius>
         <interceptGroundProjectiles>true</interceptGroundProjectiles>
         <color>(0.4, 0.4, 0.4)</color>
         <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
         <activeSound>BulletShield_Ambience</activeSound>
-        <hitPoints>1000</hitPoints>
+        <hitPoints>300</hitPoints>
         <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
         <chargeDurationTicks>600</chargeDurationTicks><!-- 10s -->
         <drawWithNoSelection>True</drawWithNoSelection>
