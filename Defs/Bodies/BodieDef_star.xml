@@ -2,6 +2,8 @@
 <Defs>
   <!-- Hover-Hauler をほとんどそのまま転用 -->
 
+  <!-- TODO: ボディーパーツ見直し(バニラ拝借型から自前の定義に) -->
+
   <!--
     parts の木構造は以下の通り
       MechanicalThoraxCanManipulate(corePart) [胸部]
