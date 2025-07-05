@@ -3,6 +3,15 @@
   <!-- Hover-Hauler をほとんどそのまま転用 -->
 
   <!-- TODO: ボディーパーツ見直し(バニラ拝借型から自前の定義に) -->
+  <!--
+    ボディーの構成自体の見直し検討
+    - 全般的に重要パーツを inside に配置する
+      - 具体的には Reactor, FluidReprocessor, ArtificialBrain, MechanicalThoraxCanManipulate など
+    - MechanicalThoraxCanManipulate を 胸部パーツ(Thorax)と 手足操作用のコア(CanManipulate)に分離する
+      - 前述の重要パーツをinsideに配置するための処置
+    - 重要パーツを守るための部位を新設する
+      - 例として、mechfox系統では `armored box` という部位を新設し、その parts(==その部位の中)に 重要パーツを配置している
+  -->
 
   <!--
     parts の木構造は以下の通り
