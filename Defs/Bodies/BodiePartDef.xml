@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- 手足操作機能を持たない胸部パーツ -->
+  <BodyPartDef>
+    <defName>RTTS_BodyPart_WorkableStar_Torso</defName>
+    <label>torso</label>
+    <hitPoints>40</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <destroyableByDamage>false</destroyableByDamage>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <!-- 重要部位保護用のパーツ -->
+  <BodyPartDef>
+    <defName>RTTS_BodyPart_WorkableStar_ArmoredBox</defName>
+    <label>armored box</label>
+    <hitPoints>80</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+</Defs>

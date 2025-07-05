@@ -1,46 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- Hover-Hauler をほとんどそのまま転用 -->
-
-  <!-- TODO: ボディーパーツ見直し(バニラ拝借型から自前の定義に) -->
-  <!--
-    ボディーの構成自体の見直し検討
-    - 全般的に重要パーツを inside に配置する
-      - 具体的には Reactor, FluidReprocessor, ArtificialBrain, MechanicalThoraxCanManipulate など
-    - MechanicalThoraxCanManipulate を 胸部パーツ(Thorax)と 手足操作用のコア(CanManipulate)に分離する
-      - 前述の重要パーツをinsideに配置するための処置
-    - 重要パーツを守るための部位を新設する
-      - 例として、mechfox系統では `armored box` という部位を新設し、その parts(==その部位の中)に 重要パーツを配置している
-  -->
+  <!-- mechfoxを参考に、重要パーツを隔壁内部に集中させる方式とした -->
 
   <!--
     parts の木構造は以下の通り
-      MechanicalThoraxCanManipulate(corePart) [胸部]
+      RTTS_BodyPart_WorkableStar_Torso [胸部]
       ├─ MechanicalNeck [首]
-      │   └─ MechanicalHead [頭部]
-      │       ├─ ArtificialBrain [脳]
-      │       ├─ SightSensor (left) [左目]
-      │       ├─ SightSensor (right) [右目]
-      │       ├─ HearingSensor (left) [左耳]
-      │       ├─ HearingSensor (right) [右耳]
-      │       └─ SmellSensor [鼻]
-      ├─ MechanicalLeg (front left wing) [前左脚]
-      │   └─ MechanicalFoot (front left sensor) [前左足]
-      ├─ MechanicalLeg (front right wing) [前右脚]
-      │   └─ MechanicalFoot (front right sensor) [前右足]
-      ├─ MechanicalLeg (rear left wing) [後左脚]
-      │   └─ MechanicalFoot (rear left sensor) [後左足]
-      ├─ MechanicalLeg (rear right wing) [後右脚]
-      │   └─ MechanicalFoot (rear right sensor) [後右足]
-      ├─ Reactor [リアクター]
-      ├─ FluidReprocessor [流体再処理器]
-      └─ FluidReprocessor [流体再処理器]
+      │  └─ MechanicalHead [頭部]
+      │     ├─ SightSensor [視覚センサー]
+      │     ├─ HearingSensor [聴覚センサー]
+      │     └─ SmellSensor [嗅覚センサー]
+      ├─ RTTS_BodyPart_WorkableStar_ArmoredBox [隔壁内部]
+      │  ├─ ArtificialBrain [人工脳]
+      │  ├─ MechanicalThoraxCanManipulate [手足操作用の胸部]
+      │  ├─ Reactor [リアクター]
+      │  └─ FluidReprocessor [流体再処理装置]
+      ├─ MechanicalLeg [前左脚]
+      │  └─ MechanicalFoot [前左足]
+      ├─ MechanicalLeg [前右脚]
+      │  └─ MechanicalFoot [前右足]
+      ├─ MechanicalLeg [後左脚]
+      │  └─ MechanicalFoot [後左足]
+      └─ MechanicalLeg [後右脚]
+          └─ MechanicalFoot [後右足]
   -->
   <BodyDef>
     <defName>RTTS_Mech_Body_WorkableStar</defName>
     <label>WorkableStar Body</label>
     <corePart>
-      <def>MechanicalThoraxCanManipulate</def>
+      <def>RTTS_BodyPart_WorkableStar_Torso</def>
       <height>Middle</height>
       <depth>Outside</depth>
       <groups>
@@ -56,15 +44,12 @@
               <def>MechanicalHead</def>
               <coverage>0.80</coverage>
               <groups>
-                <!-- `//ThingDef[defName="RTTS_Mech_alpha_star"]/race/tools` で参照されていて、この部位で殴ってる扱いになる -->
+                <!-- `//ThingDef[defName="RTTS_Mech_alpha_star"]/race/tools`
+                で参照されていて、この部位で殴ってる扱いになる -->
                 <li>HeadAttackTool</li>
               </groups>
               <parts>
-                <li>
-                  <def>ArtificialBrain</def>
-                  <coverage>0.10</coverage>
-                  <depth>Inside</depth>
-                </li>
+                <!-- 頭脳パーツは重要部位であるため、頭部に配置せずより強固に保護された場所に格納する -->
                 <li>
                   <def>SightSensor</def>
                   <customLabel>left sight sensor</customLabel>
@@ -90,6 +75,36 @@
                   <coverage>0.10</coverage>
                 </li>
               </parts>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <!-- 追加部位: 隔壁内部 -->
+          <def>RTTS_BodyPart_WorkableStar_ArmoredBox</def>
+          <customLabel>armored box</customLabel>
+          <coverage>0.26</coverage>
+          <depth>Inside</depth>
+          <parts>
+            <li>
+              <def>ArtificialBrain</def>
+              <customLabel>artificial brain</customLabel>
+              <coverage>0.35</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>MechanicalThoraxCanManipulate</def>
+              <coverage>0.25</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>Reactor</def>
+              <coverage>0.15</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>FluidReprocessor</def>
+              <coverage>0.15</coverage>
+              <depth>Inside</depth>
             </li>
           </parts>
         </li>
@@ -150,21 +165,6 @@
               <coverage>0.5</coverage>
             </li>
           </parts>
-        </li>
-        <li>
-          <def>Reactor</def>
-          <coverage>0.06</coverage>
-          <depth>Inside</depth>
-        </li>
-        <li>
-          <def>FluidReprocessor</def>
-          <coverage>0.04</coverage>
-          <depth>Inside</depth>
-        </li>
-        <li>
-          <def>FluidReprocessor</def>
-          <coverage>0.04</coverage>
-          <depth>Inside</depth>
         </li>
       </parts>
     </corePart>
