@@ -2,6 +2,8 @@
 <Defs>
   <!-- mechfoxを参考に、重要パーツを隔壁内部に集中させる方式とした -->
 
+  <!-- see. https://rimworldwiki.com/wiki/Body_Parts#Mechanoids -->
+
   <!--
     parts の木構造は以下の通り
       RTTS_BodyPart_WorkableStar_Torso [胸部]

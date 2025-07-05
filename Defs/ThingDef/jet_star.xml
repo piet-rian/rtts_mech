@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- mechfoxのspiritの方の定義をベースに改造する、英文コメントが残っているのはコピペの名残 -->
+  <!-- mechfoxのfirefoxの方の定義をベースに改造する、英文コメントが残っているのはコピペの名残 -->
 
   <ThingDef ParentName="RTTS_Mech_star">
     <defName>RTTS_Mech_jet_star</defName>
