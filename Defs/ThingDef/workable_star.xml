@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- mechfoxのspiritの方の定義をベースに改造する、英文コメントが残っているのはコピペの名残 -->
-
-  <ThingDef ParentName="RTTS_Mech_star">
-    <!-- TODO: 更に分離するために抽象クラス化する -->
-    <defName>RTTS_Mech_alpha_star</defName>
-    <label>alpha star</label>
-
-    <!-- memo.
-      description においてはカラータグ `<color=#FF0000>xxx</color>` で色を変えられる
-      ただし、 <> は &lt; &gt; に直す必要あり
-    -->
-    <description>TODO
-      \n\n&lt;color=#808080&gt;TODO&lt;/color&gt;
-      \n&lt;color=#808080&gt;TODO&lt;/color&gt;</description>
-
+  <!-- 作業用メカノイド群の共通定義 -->
+  <ThingDef Abstract="True" Name="RTTS_Mech_work_star" ParentName="RTTS_Mech_star">
     <statBases>
       <MarketValue>750</MarketValue> <!-- 市場価値 -->
-      <MoveSpeed>6.50</MoveSpeed> <!-- 移動速度, 8.0を超えると経路計算的な負荷が上がるという話を何処かで見聞きしている -->
+      <MoveSpeed>6.00</MoveSpeed> <!-- 移動速度, 8.0を超えると経路計算的な負荷が上がるという話を何処かで見聞きしている -->
 
       <!-- 許容温度設定 -->
       <ComfyTemperatureMin>-273</ComfyTemperatureMin>
@@ -46,31 +33,6 @@
       <mechWeightClass>Light</mechWeightClass> <!-- メカの重量クラス -->
       <baseBodySize>0.40</baseBodySize> <!-- 体格、1下回ってると運搬能力にマイナス補正 -->
       <baseHealthScale>0.8</baseHealthScale> <!-- 基本HP倍率 -->
-
-      <!-- 実施可能な作業の定義 -->
-      <mechEnabledWorkTypes>
-        <!-- TODO: 複数メカに分散させる -->
-        <li>Firefighter</li><!-- 消火 -->
-        <li>BasicWorker</li><!-- 雑用 -->
-        <li>PlantCutting</li><!-- 採集伐採 -->
-        <li>Growing</li> <!-- 栽培 -->
-        <li>Construction</li> <!-- 建設・解体 -->
-        <li>Mining</li> <!-- 採掘 -->
-        <li>Hauling</li> <!-- 運搬 -->
-        <li>Cleaning</li> <!-- 清掃 -->
-      </mechEnabledWorkTypes>
-
-      <!-- 優先順位 -->
-      <mechWorkTypePriorities>
-        <Firefighter>1</Firefighter>
-        <BasicWorker>1</BasicWorker>
-        <PlantCutting>1</PlantCutting>
-        <Growing>2</Growing>
-        <Construction>3</Construction>
-        <Mining>3</Mining>
-        <Hauling>4</Hauling>
-        <Cleaning>4</Cleaning>
-      </mechWorkTypePriorities>
     </race>
 
     <!-- 装備なし近接攻撃時の内容定義 -->
@@ -112,10 +74,6 @@
       </li>
     </damageMultipliers>
 
-    <!-- レシピとか研究欄とかで表示されるアイコンとその拡大スケール -->
-    <uiIconPath>UI/WorkableStar</uiIconPath>
-    <uiIconScale>1</uiIconScale>
   </ThingDef>
-
 
 </Defs>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ワークスター・アルファ : 作業用メカノイド : 建設, 採掘担当 -->
+
+  <ThingDef ParentName="RTTS_Mech_work_star">
+    <defName>RTTS_Mech_alpha_star</defName>
+    <label>work star alpha</label>
+
+    <!-- memo.
+      description においてはカラータグ `<color=#FF0000>xxx</color>` で色を変えられる
+      ただし、 <> は &lt; &gt; に直す必要あり
+    -->
+    <description>Mechanoid for construction and mining operations.
+      \n\n&lt;color=#808080&gt;EnabledWork: Firefighter, Construction, Mining, Hauling, Cleaning&lt;/color&gt;</description>
+
+    <!-- 種族定義 -->
+    <race>
+      <!-- 実施可能な作業の定義 -->
+      <mechEnabledWorkTypes>
+        <li>Firefighter</li><!-- 消火 -->
+        <li>Construction</li> <!-- 建設・解体 -->
+        <li>Mining</li> <!-- 採掘 -->
+        <li>Hauling</li> <!-- 運搬 -->
+        <li>Cleaning</li> <!-- 清掃 -->
+      </mechEnabledWorkTypes>
+
+      <!-- 優先順位 -->
+      <mechWorkTypePriorities>
+        <Firefighter>1</Firefighter>
+        <Construction>2</Construction>
+        <Mining>2</Mining>
+        <Hauling>4</Hauling>
+        <Cleaning>4</Cleaning>
+      </mechWorkTypePriorities>
+    </race>
+
+    <!-- レシピとか研究欄とかで表示されるアイコンとその拡大スケール -->
+    <uiIconPath>UI/WorkableStar</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+
+  </ThingDef>
+
+</Defs>
