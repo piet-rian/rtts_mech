@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- 培養時のレシピ -->
-  <RecipeDef>
-    <defName>RTTS_Mech_Recipe_WorkableStar</defName>
-    <label>gestate WorkableStar</label>
-    <description>Gestate a WorkableStar</description>
-    <jobString>Gestating WorkableStar.</jobString>
-
-    <!-- 説明文からリンクされる対象 -->
-    <descriptionHyperlinks>
-      <ThingDef>RTTS_Mech_alpha_star</ThingDef> <!-- 培養されるメカノイドを指定してある -->
-    </descriptionHyperlinks>
-
+  <!-- 培養時のレシピ: 共通部 -->
+  <RecipeDef Abstract="True" Name="RTTS_Mech_Recipe_WorkableStar">
     <!-- 前提研究 -->
     <researchPrerequisites>
       <li>BasicMechtech</li>
@@ -42,10 +32,41 @@
         <count>50</count>
       </li>
     </ingredients>
+  </RecipeDef>
+
+  <!-- 実レシピ：アルファ -->
+  <RecipeDef ParentName="RTTS_Mech_Recipe_WorkableStar">
+    <defName>RTTS_Mech_Recipe_alpha</defName>
+    <label>gestate Work Star Alpha</label>
+    <description>Gestate a Work Star Alpha</description>
+    <jobString>Gestating Work Star Alpha.</jobString>
+
+    <!-- 説明文からリンクされる対象 -->
+    <descriptionHyperlinks>
+      <ThingDef>RTTS_Mech_alpha_star</ThingDef> <!-- 培養されるメカノイドを指定してある -->
+    </descriptionHyperlinks>
 
     <!-- 成果物(本レシピの場合は培養されるメカノイド) -->
     <products>
       <RTTS_Mech_alpha_star>1</RTTS_Mech_alpha_star>
+    </products>
+  </RecipeDef>
+
+  <!-- 実レシピ：ベータ -->
+  <RecipeDef ParentName="RTTS_Mech_Recipe_WorkableStar">
+    <defName>RTTS_Mech_Recipe_beta</defName>
+    <label>gestate Work Star Beta</label>
+    <description>Gestate a Work Star Beta</description>
+    <jobString>Gestating Work Star Beta.</jobString>
+
+    <!-- 説明文からリンクされる対象 -->
+    <descriptionHyperlinks>
+      <ThingDef>RTTS_Mech_beta_star</ThingDef> <!-- 培養されるメカノイドを指定してある -->
+    </descriptionHyperlinks>
+
+    <!-- 成果物(本レシピの場合は培養されるメカノイド) -->
+    <products>
+      <RTTS_Mech_beta_star>1</RTTS_Mech_beta_star>
     </products>
   </RecipeDef>
 
