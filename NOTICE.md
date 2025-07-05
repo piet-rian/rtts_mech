@@ -10,10 +10,14 @@
 
 いずれもいわゆる MIT であったりとか CC であったりといったライセンスとは異なるライセンスが設定してあるため、個別の記載は省略
 
-### `workable star` 関連画像
+### `work star alpha` 関連画像
 
 - <https://www.flaticon.com/free-icon/star_1012350>
 - <https://www.flaticon.com/free-icon/star_2994831>
+
+### `work star beta` 関連画像
+
+- <https://www.flaticon.com/free-icon/star_560896>
 
 ### `jet star` 関連画像
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnKindDef ParentName="RTTS_Mech_PawnKind_work_star">
+    <defName>RTTS_Mech_PawnKind_beta_star</defName>
+    <label>work star beta</label>
+    <race>RTTS_Mech_beta_star</race> <!-- ThingDefの指定 -->
+
+    <!-- ライフステージごとの指定(基本的には画像周りの指定) -->
+    <lifeStages>
+      <li>
+        <bodyGraphicData> <!-- メカノイド(生体?)のグラフィック定義 -->
+          <texPath>Races/Beta/New</texPath>
+          <maskPath>Races/Beta/Mask</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <corpseGraphicData> <!--  メカノイド(死体)のグラフィック定義 -->
+          <texPath>Races/Beta/DeathNew</texPath>
+          <drawSize>1</drawSize>
+        </corpseGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Races/Beta/Old</texPath>
+          <maskPath>Races/Beta/Mask</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <corpseGraphicData>
+          <texPath>Races/Beta/DeathOld</texPath>
+          <drawSize>1</drawSize>
+        </corpseGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>
