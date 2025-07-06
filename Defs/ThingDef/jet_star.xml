@@ -86,14 +86,14 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>10</power>
-        <cooldownTime>0.9</cooldownTime>
-        <armorPenetration>0.18</armorPenetration>
+        <power>31</power>
+        <cooldownTime>1.5</cooldownTime>
+        <armorPenetration>0.55</armorPenetration>
         <chanceFactor>1.0</chanceFactor>
         <extraMeleeDamages>
           <li>
             <def>EMP</def>
-            <amount>24</amount>
+            <amount>72</amount>
           </li>
         </extraMeleeDamages>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup> <!-- 体のどこのパーツ群で殴っている扱いにしているのか -->
