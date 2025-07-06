@@ -26,3 +26,7 @@
 ### `jet star` 関連画像
 
 - <https://www.flaticon.com/free-icon/star_3640329>
+
+### 効果音
+
+- <https://145.rei-yumesaki.net/article/427525136.html>
