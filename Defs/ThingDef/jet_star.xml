@@ -15,7 +15,7 @@
       \n&lt;color=#808080&gt;TODO&lt;/color&gt;</description>
 
     <statBases>
-      <MarketValue>750</MarketValue> <!-- 市場価値 -->
+      <MarketValue>4240</MarketValue> <!-- 市場価値 -->
       <MoveSpeed>8.00</MoveSpeed> <!-- 移動速度, 8.0を超えると経路計算的な負荷が上がるという話を何処かで見聞きしている -->
 
       <!-- 許容温度設定 -->
