@@ -2,6 +2,7 @@
 
 - 高効率の産業用メカノイドの追加
 - 特定用途向けの戦闘用メカノイドの追加
+- 有毒廃棄物パックを無害化するためのレシピの追加
 - [Return to The Star - core](https://github.com/piet-rian/rtts_core) が前提Modとして必要です
 
 ## 詳細

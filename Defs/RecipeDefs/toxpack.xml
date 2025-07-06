@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- 有毒廃棄物パック(toxic wastepack)を星に還すためのレシピ定義 -->
+
+  <!-- * ワークタイプは定義済みなので省略 * -->
+
+  <!-- 変換レシピそのものベース -->
+  <RecipeDef Name="RTTS_WASTEPACK_RETURN_TO_A_STAR" Abstract="True">
+    <jobString>returning it to a star.</jobString>
+    <effectWorking>Cremate</effectWorking> <!-- 実質的にアイテムも手に入る火葬場なので火葬場エフェクト指定 -->
+    <soundWorking>Recipe_Cremate</soundWorking> <!-- 作業音についても同じ -->
+    <targetCountAdjustment>20</targetCountAdjustment>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Artistic</workSkill> <!-- レシピは芸術関連の括りにいれる -->
+    <autoStripCorpses>false</autoStripCorpses> <!-- 服ごと星に還す -->
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Wastepack</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <thingDefs>
+        <li>Wastepack</li>
+      </thingDefs>
+    </defaultIngredientFilter>
+  </RecipeDef>
+
+  <!-- 実レシピ定義 -->
+
+  <RecipeDef ParentName="RTTS_WASTEPACK_RETURN_TO_A_STAR">
+    <defName>RTTS_WASTEPACK_RETURN_TO_A_STAR_1x</defName>
+    <label>return to a star(x5)(toxic wastepack)</label>
+    <description>Return (a) toxic wastepack(s) to a star.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <workAmount>100</workAmount>
+    <products>
+      <RTTS_STAR_PIECE>1</RTTS_STAR_PIECE>
+    </products>
+    <researchPrerequisites>
+      <li>RTTS_RESEARCH_PROJECT_1T</li>
+      <li>WastepackAtomizer</li>
+    </researchPrerequisites>
+  </RecipeDef>
+
+  <RecipeDef ParentName="RTTS_WASTEPACK_RETURN_TO_A_STAR">
+    <defName>RTTS_WASTEPACK_RETURN_TO_A_STAR_3x</defName>
+    <label>return to a star(x5)(toxic wastepack)</label>
+    <description>Return (a) toxic wastepack(s) to a star.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Wastepack</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+    </ingredients>
+    <workAmount>100</workAmount>
+    <products>
+      <RTTS_STAR_PIECE>3</RTTS_STAR_PIECE>
+    </products>
+    <researchPrerequisites>
+      <li>RTTS_RESEARCH_PROJECT_1T</li>
+      <li>WastepackAtomizer</li>
+    </researchPrerequisites>
+  </RecipeDef>
+
+</Defs>

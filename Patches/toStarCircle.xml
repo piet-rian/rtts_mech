@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ===== RTTS Core の聖堂にレシピを追加する とする情報を追加 ===== -->
+
+  <!-- 要素追加対象であるxPathがあることが自明なためxPathのチェックは省略 -->
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="RTTS_STAR_CIRCLE"]/recipes</xpath>
+    <value>
+      <li>RTTS_WASTEPACK_RETURN_TO_A_STAR_1x</li>
+    </value>
+  </Operation>
+
+</Patch>
