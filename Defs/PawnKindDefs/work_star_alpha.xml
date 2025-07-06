@@ -14,11 +14,11 @@
           <maskPath>Races/Alpha/Mask</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1</drawSize>
+          <drawSize>0.6</drawSize>
         </bodyGraphicData>
         <corpseGraphicData> <!--  メカノイド(死体)のグラフィック定義 -->
           <texPath>Races/Alpha/DeathNew</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>0.6</drawSize>
         </corpseGraphicData>
       </li>
       <li>
@@ -27,11 +27,11 @@
           <maskPath>Races/Alpha/Mask</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1</drawSize>
+          <drawSize>0.6</drawSize>
         </bodyGraphicData>
         <corpseGraphicData>
           <texPath>Races/Alpha/DeathOld</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>0.6</drawSize>
         </corpseGraphicData>
       </li>
     </lifeStages>

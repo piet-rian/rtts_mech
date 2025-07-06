@@ -18,11 +18,11 @@
           <maskPath>Races/JetStar/Mask</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <corpseGraphicData> <!--  メカノイド(死体)のグラフィック定義 -->
           <texPath>Races/JetStar/DeathNew</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>1.2</drawSize>
         </corpseGraphicData>
       </li>
       <li>
@@ -31,11 +31,11 @@
           <maskPath>Races/JetStar/Mask</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1</drawSize>
+          <drawSize>1.2</drawSize>
         </bodyGraphicData>
         <corpseGraphicData>
           <texPath>Races/JetStar/DeathOld</texPath>
-          <drawSize>1</drawSize>
+          <drawSize>1.2</drawSize>
         </corpseGraphicData>
       </li>
     </lifeStages>
