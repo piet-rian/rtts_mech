@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <!-- Vanilla Expanded Framework が入っている場合、星がホバーするようになる  -->
+  <!-- see.
+    https://rimworldwiki.com/wiki/Modding_Tutorials/PatchOperations#PatchOperationFindMod
+    https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki/Floating
+  -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Expanded Framework</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>//ThingDef[@Name="RTTS_Mech_star"]/comps</xpath>
+      <value>
+        <li Class="VEF.AnimalBehaviours.CompProperties_Floating" />
+      </value>
+    </match>
+  </Operation>
+
+</Patch>
