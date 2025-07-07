@@ -5,7 +5,7 @@
   <ThingDef ParentName="RTTS_Mech_work_star">
     <defName>RTTS_Mech_beta_star</defName>
     <label>work star beta</label>
-    <description>Mechanoid for construction and mining operations.
+    <description>Mechanoid for plantCutting and growing operations.
       \n\n&lt;color=#808080&gt;EnabledWork: Firefighter, PlantCutting, Growing, Hauling, Cleaning&lt;/color&gt;</description>
 
     <!-- 種族定義 -->

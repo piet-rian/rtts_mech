@@ -5,7 +5,7 @@
   <ThingDef ParentName="RTTS_Mech_work_star">
     <defName>RTTS_Mech_gamma_star</defName>
     <label>work star gamma</label>
-    <description>Mechanoid for Warden and Cooking operations.
+    <description>Mechanoid for handling and Cooking operations.
       \n\n&lt;color=#808080&gt;EnabledWork: Firefighter, Handling, Cooking, Hauling, Cleaning&lt;/color&gt;</description>
 
     <!-- 種族定義 -->
