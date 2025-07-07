@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ===== 培養槽のレシピに星たちの復活用の設定を追加 ===== -->
+
+  <!-- 要素追加対象であるxPathがあることが自明なためxPathのチェックは省略 -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName="ResurrectLightMech"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Corpse_RTTS_Mech_alpha_star</li>
+      <li>Corpse_RTTS_Mech_beta_star</li>
+      <li>Corpse_RTTS_Mech_gamma_star</li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName="ResurrectMediumMech"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+      <li>Corpse_RTTS_Mech_jet_star</li>
+    </value>
+  </Operation>
+
+</Patch>
