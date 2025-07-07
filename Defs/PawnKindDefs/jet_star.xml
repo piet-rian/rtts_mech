@@ -8,7 +8,7 @@
     <defaultFactionType>PlayerColony</defaultFactionType> <!-- Player Only -->
     <controlGroupPortraitZoom>2.0</controlGroupPortraitZoom>
     <minGenerationAge>0</minGenerationAge>
-    <combatPower>60</combatPower>
+    <combatPower>500</combatPower>
 
     <!-- ライフステージごとの指定 -->
     <lifeStages>
