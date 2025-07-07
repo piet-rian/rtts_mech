@@ -72,24 +72,28 @@
           <customLabel>front left edge</customLabel>
           <coverage>0.12</coverage>
           <height>Bottom</height>
+          <depth>Outside</depth>
         </li>
         <li>
           <def>RTTS_BodyPart_WorkableStar_Edge</def>
           <customLabel>front right edge</customLabel>
           <coverage>0.12</coverage>
           <height>Bottom</height>
+          <depth>Outside</depth>
         </li>
         <li>
           <def>RTTS_BodyPart_WorkableStar_Edge</def>
           <customLabel>rear left edge</customLabel>
           <coverage>0.12</coverage>
           <height>Bottom</height>
+          <depth>Outside</depth>
         </li>
         <li>
           <def>RTTS_BodyPart_WorkableStar_Edge</def>
           <customLabel>rear right edge</customLabel>
           <coverage>0.12</coverage>
           <height>Bottom</height>
+          <depth>Outside</depth>
         </li>
         <li>
           <!-- 追加部位: 攻撃用のパーツ -->
