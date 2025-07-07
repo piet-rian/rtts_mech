@@ -8,6 +8,7 @@
     <xpath>/Defs/ThingDef[defName="RTTS_STAR_CIRCLE"]/recipes</xpath>
     <value>
       <li>RTTS_WASTEPACK_RETURN_TO_A_STAR_1x</li>
+      <li>RTTS_WASTEPACK_RETURN_TO_A_STAR_3x</li>
     </value>
   </Operation>
 
