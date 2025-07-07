@@ -3,7 +3,7 @@
   <!-- 作業用メカノイド群の共通定義 -->
   <ThingDef Abstract="True" Name="RTTS_Mech_work_star" ParentName="RTTS_Mech_star">
     <statBases>
-      <MarketValue>1120</MarketValue> <!-- 市場価値 -->
+      <MarketValue>1500</MarketValue> <!-- 市場価値 -->
       <MoveSpeed>6.00</MoveSpeed> <!-- 移動速度, 8.0を超えると経路計算的な負荷が上がるという話を何処かで見聞きしている -->
 
       <!-- 許容温度設定 -->

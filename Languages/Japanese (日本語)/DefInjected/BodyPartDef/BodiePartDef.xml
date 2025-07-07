@@ -4,14 +4,11 @@
   <!-- EN: armored box -->
   <RTTS_BodyPart_WorkableStar_ArmoredBox.label>装甲ボックス</RTTS_BodyPart_WorkableStar_ArmoredBox.label>
 
+  <!-- EN: core -->
+  <RTTS_BodyPart_WorkableStar_core.label>星の核</RTTS_BodyPart_WorkableStar_core.label>
+
   <!-- EN: edge -->
   <RTTS_BodyPart_WorkableStar_Edge.label>角</RTTS_BodyPart_WorkableStar_Edge.label>
-
-  <!-- EN: levitator -->
-  <RTTS_BodyPart_WorkableStar_levitator.label>浮力発生装置</RTTS_BodyPart_WorkableStar_levitator.label>
-
-  <!-- EN: telekinesis generator -->
-  <RTTS_BodyPart_WorkableStar_telekinesis.label>念動力発生器</RTTS_BodyPart_WorkableStar_telekinesis.label>
 
   <!-- EN: torso -->
   <RTTS_BodyPart_WorkableStar_Torso.label>胴体</RTTS_BodyPart_WorkableStar_Torso.label>
