@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: gestate JetStar -->
+  <RTTS_Mech_Recipe_JetStar.label>ジェットスターの培養</RTTS_Mech_Recipe_JetStar.label>
+  <!-- EN: Gestate a JetStar -->
+  <RTTS_Mech_Recipe_JetStar.description>ジェットスターを培養する</RTTS_Mech_Recipe_JetStar.description>
+  <!-- EN: Gestating JetStar. -->
+  <RTTS_Mech_Recipe_JetStar.jobString>ジェットスターを培養中。</RTTS_Mech_Recipe_JetStar.jobString>
+
+</LanguageData>

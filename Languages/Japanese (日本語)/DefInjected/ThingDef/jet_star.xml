@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: jet star -->
+  <RTTS_Mech_jet_star.label>ジェットスター</RTTS_Mech_jet_star.label>
+  <!-- EN: Mechanoid for Hauling and Melee Fighting. Has Shield, Has Emp Melee Attack.\n
+  \n\n<color=#808080>EnabledWork: Firefighter, BasicWorker, Hauling</color> -->
+  <RTTS_Mech_jet_star.description>運搬や近接戦闘用のメカノイド。シールドとEMP近接攻撃を持つ。\n\n&lt;color=#808080&gt;有効作業：消火、雑用、運搬&lt;/color&gt;</RTTS_Mech_jet_star.description>
+  <!-- EN: twinkle -->
+  <RTTS_Mech_jet_star.tools.twinkle.label>キラキラ</RTTS_Mech_jet_star.tools.twinkle.label>
+
+</LanguageData>

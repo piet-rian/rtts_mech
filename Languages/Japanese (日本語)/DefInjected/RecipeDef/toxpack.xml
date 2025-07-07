@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: return to a star(x5)(toxic wastepack) -->
+  <RTTS_WASTEPACK_RETURN_TO_A_STAR_1x.label>星へ還す(x5)(有毒廃棄物パック)</RTTS_WASTEPACK_RETURN_TO_A_STAR_1x.label>
+  <!-- EN: Return (a) toxic wastepack(s) to a star. -->
+  <RTTS_WASTEPACK_RETURN_TO_A_STAR_1x.description>有毒廃棄物パックを星へ還す。</RTTS_WASTEPACK_RETURN_TO_A_STAR_1x.description>
+  <!-- EN: returning it to a star. -->
+  <RTTS_WASTEPACK_RETURN_TO_A_STAR_1x.jobString>星へ還している。</RTTS_WASTEPACK_RETURN_TO_A_STAR_1x.jobString>
+
+  <!-- EN: return to a star(x5)(toxic wastepack) -->
+  <RTTS_WASTEPACK_RETURN_TO_A_STAR_3x.label>星へ還す(x15)(有毒廃棄物パック)</RTTS_WASTEPACK_RETURN_TO_A_STAR_3x.label>
+  <!-- EN: Return (a) toxic wastepack(s) to a star. -->
+  <RTTS_WASTEPACK_RETURN_TO_A_STAR_3x.description>有毒廃棄物パックを星へ還す。</RTTS_WASTEPACK_RETURN_TO_A_STAR_3x.description>
+  <!-- EN: returning it to a star. -->
+  <RTTS_WASTEPACK_RETURN_TO_A_STAR_3x.jobString>星へ還している。</RTTS_WASTEPACK_RETURN_TO_A_STAR_3x.jobString>
+
+</LanguageData>

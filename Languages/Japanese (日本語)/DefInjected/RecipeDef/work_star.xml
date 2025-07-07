@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: gestate Work Star Alpha -->
+  <RTTS_Mech_Recipe_alpha.label>ワークスター・アルファの培養</RTTS_Mech_Recipe_alpha.label>
+  <!-- EN: Gestate a Work Star Alpha -->
+  <RTTS_Mech_Recipe_alpha.description>ワークスター・アルファを培養する</RTTS_Mech_Recipe_alpha.description>
+  <!-- EN: Gestating Work Star Alpha. -->
+  <RTTS_Mech_Recipe_alpha.jobString>ワークスター・アルファを培養中。</RTTS_Mech_Recipe_alpha.jobString>
+
+  <!-- EN: gestate Work Star Beta -->
+  <RTTS_Mech_Recipe_beta.label>ワークスター・ベータの培養</RTTS_Mech_Recipe_beta.label>
+  <!-- EN: Gestate a Work Star Beta -->
+  <RTTS_Mech_Recipe_beta.description>ワークスター・ベータを培養する</RTTS_Mech_Recipe_beta.description>
+  <!-- EN: Gestating Work Star Beta. -->
+  <RTTS_Mech_Recipe_beta.jobString>ワークスター・ベータを培養中。</RTTS_Mech_Recipe_beta.jobString>
+
+  <!-- EN: gestate Work Star Gamma -->
+  <RTTS_Mech_Recipe_gamma.label>ワークスター・ガンマの培養</RTTS_Mech_Recipe_gamma.label>
+  <!-- EN: Gestate a Work Star Gamma -->
+  <RTTS_Mech_Recipe_gamma.description>ワークスター・ガンマを培養する</RTTS_Mech_Recipe_gamma.description>
+  <!-- EN: Gestating Work Star Gamma. -->
+  <RTTS_Mech_Recipe_gamma.jobString>ワークスター・ガンマを培養中。</RTTS_Mech_Recipe_gamma.jobString>
+
+</LanguageData>

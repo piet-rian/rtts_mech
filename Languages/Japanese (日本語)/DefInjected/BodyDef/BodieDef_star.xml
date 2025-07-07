@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: WorkableStar Body -->
+  <RTTS_Mech_Body_WorkableStar.label>ワークブルスターのボディ</RTTS_Mech_Body_WorkableStar.label>
+  <!-- EN: head edge -->
+  <RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.customLabel>頭(角)</RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.customLabel>
+  <!-- EN: left sight sensor -->
+  <RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.parts.left_sight_sensor.customLabel>左視覚センサー</RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.parts.left_sight_sensor.customLabel>
+  <!-- EN: right sight sensor -->
+  <RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.parts.right_sight_sensor.customLabel>右視覚センサー</RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.parts.right_sight_sensor.customLabel>
+  <!-- EN: left hearing sensor -->
+  <RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.parts.left_hearing_sensor.customLabel>
+    左聴覚センサー</RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.parts.left_hearing_sensor.customLabel>
+  <!-- EN: right hearing sensor -->
+  <RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.parts.right_hearing_sensor.customLabel>
+    右聴覚センサー</RTTS_Mech_Body_WorkableStar.corePart.parts.head_edge.parts.right_hearing_sensor.customLabel>
+  <!-- EN: front left edge -->
+  <RTTS_Mech_Body_WorkableStar.corePart.parts.front_left_edge.customLabel>前左角</RTTS_Mech_Body_WorkableStar.corePart.parts.front_left_edge.customLabel>
+  <!-- EN: front right edge -->
+  <RTTS_Mech_Body_WorkableStar.corePart.parts.front_right_edge.customLabel>前右角</RTTS_Mech_Body_WorkableStar.corePart.parts.front_right_edge.customLabel>
+  <!-- EN: rear left edge -->
+  <RTTS_Mech_Body_WorkableStar.corePart.parts.rear_left_edge.customLabel>後左角</RTTS_Mech_Body_WorkableStar.corePart.parts.rear_left_edge.customLabel>
+  <!-- EN: rear right edge -->
+  <RTTS_Mech_Body_WorkableStar.corePart.parts.rear_right_edge.customLabel>後右角</RTTS_Mech_Body_WorkableStar.corePart.parts.rear_right_edge.customLabel>
+
+</LanguageData>

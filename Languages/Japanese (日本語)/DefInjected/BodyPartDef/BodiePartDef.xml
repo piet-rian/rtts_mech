@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: armored box -->
+  <RTTS_BodyPart_WorkableStar_ArmoredBox.label>装甲ボックス</RTTS_BodyPart_WorkableStar_ArmoredBox.label>
+
+  <!-- EN: edge -->
+  <RTTS_BodyPart_WorkableStar_Edge.label>角</RTTS_BodyPart_WorkableStar_Edge.label>
+
+  <!-- EN: levitator -->
+  <RTTS_BodyPart_WorkableStar_levitator.label>浮力発生装置</RTTS_BodyPart_WorkableStar_levitator.label>
+
+  <!-- EN: telekinesis generator -->
+  <RTTS_BodyPart_WorkableStar_telekinesis.label>念動力発生器</RTTS_BodyPart_WorkableStar_telekinesis.label>
+
+  <!-- EN: torso -->
+  <RTTS_BodyPart_WorkableStar_Torso.label>胴体</RTTS_BodyPart_WorkableStar_Torso.label>
+
+  <!-- EN: twinkle(attack tool) -->
+  <RTTS_BodyPart_WorkableStar_twinkle.label>キラキラ（攻撃用ツール）</RTTS_BodyPart_WorkableStar_twinkle.label>
+
+</LanguageData>
