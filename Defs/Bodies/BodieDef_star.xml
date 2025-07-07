@@ -28,7 +28,7 @@
     <defName>RTTS_Mech_Body_WorkableStar</defName>
     <label>WorkableStar Body</label>
     <corePart>
-      <def>MechanicalThorax</def>
+      <def>RTTS_BodyPart_WorkableStar_Torso</def>
       <height>Middle</height>
       <depth>Outside</depth>
       <groups>
