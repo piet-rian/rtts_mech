@@ -40,11 +40,6 @@
           <customLabel>head edge</customLabel>
           <coverage>0.12</coverage>
           <height>Top</height>
-          <groups>
-            <!-- `//ThingDef[defName="RTTS_Mech_alpha_star"]/race/tools`
-                で参照されていて、この部位で殴ってる扱いになる -->
-            <li>HeadAttackTool</li>
-          </groups>
           <parts>
             <li>
               <def>SightSensor</def>
@@ -96,7 +91,16 @@
           <coverage>0.12</coverage>
           <height>Bottom</height>
         </li>
-
+        <li>
+          <!-- 追加部位: 攻撃用のパーツ -->
+          <def>RTTS_BodyPart_WorkableStar_twinkle</def>
+          <!-- 武器相当部位に対する攻撃不可、という意味でのカバレッジO (不思議な力で切った張ったをしている想定なため) -->
+          <coverage>0.0</coverage>
+          <groups>
+            <!-- `//ThingDef[defName="RTTS_Mech_alpha_star"]/race/tools` で参照されていて、この部位で殴ってる扱いになる -->
+            <li>RTTS_TwinkleAttackTool</li>
+          </groups>
+        </li>
         <li>
           <!-- 追加部位: 隔壁内部 -->
           <def>RTTS_BodyPart_WorkableStar_ArmoredBox</def>

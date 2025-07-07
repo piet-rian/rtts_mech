@@ -69,4 +69,25 @@
     </tags>
   </BodyPartDef>
 
+  <!-- 攻撃用のパーツ -->
+  <BodyPartDef>
+    <defName>RTTS_BodyPart_WorkableStar_twinkle</defName>
+    <label>twinkle(attack tool)</label>
+    <hitPoints>100</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <!-- 攻撃用パーツのためのグループ定義 -->
+  <BodyPartGroupDef>
+    <defName>RTTS_TwinkleAttackTool</defName>
+    <label>twinkle(attack tool)</label>
+  </BodyPartGroupDef>
+
 </Defs>
