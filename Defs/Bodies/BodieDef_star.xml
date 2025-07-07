@@ -46,7 +46,6 @@
             <li>HeadAttackTool</li>
           </groups>
           <parts>
-            <!-- 頭脳パーツは重要部位であるため、頭部に配置せずより強固に保護された場所に格納する -->
             <li>
               <def>SightSensor</def>
               <customLabel>left sight sensor</customLabel>
@@ -75,25 +74,25 @@
         </li>
         <li>
           <def>RTTS_BodyPart_WorkableStar_Edge</def>
-          <!-- <customLabel>front left wing</customLabel> -->
+          <customLabel>front left edge</customLabel>
           <coverage>0.12</coverage>
           <height>Bottom</height>
         </li>
         <li>
           <def>RTTS_BodyPart_WorkableStar_Edge</def>
-          <!-- <customLabel>front right wing</customLabel> -->
+          <customLabel>front right edge</customLabel>
           <coverage>0.12</coverage>
           <height>Bottom</height>
         </li>
         <li>
           <def>RTTS_BodyPart_WorkableStar_Edge</def>
-          <!-- <customLabel>rear left wing</customLabel> -->
+          <customLabel>rear left edge</customLabel>
           <coverage>0.12</coverage>
           <height>Bottom</height>
         </li>
         <li>
           <def>RTTS_BodyPart_WorkableStar_Edge</def>
-          <!-- <customLabel>rear right wing</customLabel> -->
+          <customLabel>rear right edge</customLabel>
           <coverage>0.12</coverage>
           <height>Bottom</height>
         </li>
@@ -101,12 +100,10 @@
         <li>
           <!-- 追加部位: 隔壁内部 -->
           <def>RTTS_BodyPart_WorkableStar_ArmoredBox</def>
-          <customLabel>armored box</customLabel>
           <coverage>0.39</coverage>
           <parts>
             <li>
               <def>ArtificialBrain</def>
-              <customLabel>artificial brain</customLabel>
               <coverage>0.20</coverage>
               <depth>Inside</depth>
             </li>
