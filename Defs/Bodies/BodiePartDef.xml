@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- 手足操作機能を持たない胸部パーツ -->
+  <!-- 星の外側の三角形部分(擬似的な頭部および手足のパーツ) -->
+  <BodyPartDef>
+    <defName>RTTS_BodyPart_WorkableStar_Edge</defName>
+    <label>edge</label>
+    <hitPoints>50</hitPoints> <!-- MechanicalLeg(30) + MechanicalFoot(20) -->
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <destroyableByDamage>false</destroyableByDamage>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+
+  <!-- 星の内側の五角形部分(胸部パーツ) -->
   <BodyPartDef>
     <defName>RTTS_BodyPart_WorkableStar_Torso</defName>
     <label>torso</label>
@@ -25,5 +38,56 @@
     <alive>false</alive>
     <bleedRate>0</bleedRate>
   </BodyPartDef>
+
+  <!-- 移動用の浮力発生パーツ、タグ以外のステータスについてはリアクターに準拠 -->
+  <BodyPartDef>
+    <defName>RTTS_BodyPart_WorkableStar_levitator</defName>
+    <label>levitator</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>MovingLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <!-- 作業用の念力発生パーツ、タグ以外のステータスについてはリアクターに準拠 -->
+  <BodyPartDef>
+    <defName>RTTS_BodyPart_WorkableStar_telekinesis</defName>
+    <label>telekinesis generator</label>
+    <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <!-- 攻撃用のパーツ -->
+  <BodyPartDef>
+    <defName>RTTS_BodyPart_WorkableStar_twinkle</defName>
+    <label>twinkle(attack tool)</label>
+    <hitPoints>100</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <!-- 攻撃用パーツのためのグループ定義 -->
+  <BodyPartGroupDef>
+    <defName>RTTS_TwinkleAttackTool</defName>
+    <label>twinkle(attack tool)</label>
+  </BodyPartGroupDef>
 
 </Defs>

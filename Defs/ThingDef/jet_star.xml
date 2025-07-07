@@ -80,8 +80,8 @@
     <!-- 装備なし近接攻撃時の内容定義 -->
     <tools>
       <li>
-        <!-- カドによる頭突き(emp) -->
-        <label>star edge</label>
+        <!-- 攻撃用パーツ キラキラ(emp) -->
+        <label>twinkle</label>
         <capacities>
           <li>Cut</li>
         </capacities>
@@ -95,7 +95,8 @@
             <amount>72</amount>
           </li>
         </extraMeleeDamages>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup> <!-- 体のどこのパーツ群で殴っている扱いにしているのか -->
+        <!-- 体のどこのパーツ群で殴っている扱いにしているのか -->
+        <linkedBodyPartsGroup>RTTS_TwinkleAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>

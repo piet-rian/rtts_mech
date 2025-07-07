@@ -7,24 +7,22 @@
   <!--
     parts の木構造は以下の通り
       RTTS_BodyPart_WorkableStar_Torso [胸部]
-      ├─ MechanicalNeck [首]
-      │  └─ MechanicalHead [頭部]
-      │     ├─ SightSensor [視覚センサー]
-      │     ├─ HearingSensor [聴覚センサー]
-      │     └─ SmellSensor [嗅覚センサー]
-      ├─ RTTS_BodyPart_WorkableStar_ArmoredBox [隔壁内部]
-      │  ├─ ArtificialBrain [人工脳]
-      │  ├─ MechanicalThoraxCanManipulate [手足操作用の胸部]
-      │  ├─ Reactor [リアクター]
-      │  └─ FluidReprocessor [流体再処理装置]
-      ├─ MechanicalLeg [前左脚]
-      │  └─ MechanicalFoot [前左足]
-      ├─ MechanicalLeg [前右脚]
-      │  └─ MechanicalFoot [前右足]
-      ├─ MechanicalLeg [後左脚]
-      │  └─ MechanicalFoot [後左足]
-      └─ MechanicalLeg [後右脚]
-          └─ MechanicalFoot [後右足]
+        ├── RTTS_BodyPart_WorkableStar_Edge [頭部]
+        │   ├── SightSensor [視覚センサー]
+        │   ├── SightSensor [視覚センサー]
+        │   ├── HearingSensor [聴覚センサー]
+        │   ├── HearingSensor [聴覚センサー]
+        │   └── SmellSensor [嗅覚センサー]
+        ├── RTTS_BodyPart_WorkableStar_Edge [前左翼]
+        ├── RTTS_BodyPart_WorkableStar_Edge [前右翼]
+        ├── RTTS_BodyPart_WorkableStar_Edge [後左翼]
+        ├── RTTS_BodyPart_WorkableStar_Edge [後右翼]
+        └── RTTS_BodyPart_WorkableStar_ArmoredBox [隔壁内部]
+            ├── ArtificialBrain [人工脳]
+            ├── RTTS_BodyPart_WorkableStar_levitator [浮力発生装置(移動用)]
+            ├── RTTS_BodyPart_WorkableStar_telekinesis [テレキネシス装置(作業用)]
+            ├── Reactor [リアクター(心臓相当)]
+            └── FluidReprocessor (x2) [流体再処理装置(肝臓相当)]
   -->
   <BodyDef>
     <defName>RTTS_Mech_Body_WorkableStar</defName>
@@ -38,133 +36,109 @@
       </groups>
       <parts>
         <li>
-          <def>MechanicalNeck</def>
-          <coverage>0.10</coverage>
+          <def>RTTS_BodyPart_WorkableStar_Edge</def>
+          <customLabel>head edge</customLabel>
+          <coverage>0.12</coverage>
           <height>Top</height>
           <parts>
             <li>
-              <def>MechanicalHead</def>
-              <coverage>0.80</coverage>
-              <groups>
-                <!-- `//ThingDef[defName="RTTS_Mech_alpha_star"]/race/tools`
-                で参照されていて、この部位で殴ってる扱いになる -->
-                <li>HeadAttackTool</li>
-              </groups>
-              <parts>
-                <!-- 頭脳パーツは重要部位であるため、頭部に配置せずより強固に保護された場所に格納する -->
-                <li>
-                  <def>SightSensor</def>
-                  <customLabel>left sight sensor</customLabel>
-                  <coverage>0.13</coverage>
-                </li>
-                <li>
-                  <def>SightSensor</def>
-                  <customLabel>right sight sensor</customLabel>
-                  <coverage>0.13</coverage>
-                </li>
-                <li>
-                  <def>HearingSensor</def>
-                  <customLabel>left hearing sensor</customLabel>
-                  <coverage>0.10</coverage>
-                </li>
-                <li>
-                  <def>HearingSensor</def>
-                  <customLabel>right hearing sensor</customLabel>
-                  <coverage>0.10</coverage>
-                </li>
-                <li>
-                  <def>SmellSensor</def>
-                  <coverage>0.10</coverage>
-                </li>
-              </parts>
+              <def>SightSensor</def>
+              <customLabel>left sight sensor</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>SightSensor</def>
+              <customLabel>right sight sensor</customLabel>
+              <coverage>0.13</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>left hearing sensor</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>HearingSensor</def>
+              <customLabel>right hearing sensor</customLabel>
+              <coverage>0.10</coverage>
+            </li>
+            <li>
+              <def>SmellSensor</def>
+              <coverage>0.10</coverage>
             </li>
           </parts>
+        </li>
+        <li>
+          <def>RTTS_BodyPart_WorkableStar_Edge</def>
+          <customLabel>front left edge</customLabel>
+          <coverage>0.12</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>RTTS_BodyPart_WorkableStar_Edge</def>
+          <customLabel>front right edge</customLabel>
+          <coverage>0.12</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>RTTS_BodyPart_WorkableStar_Edge</def>
+          <customLabel>rear left edge</customLabel>
+          <coverage>0.12</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>RTTS_BodyPart_WorkableStar_Edge</def>
+          <customLabel>rear right edge</customLabel>
+          <coverage>0.12</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <!-- 追加部位: 攻撃用のパーツ -->
+          <def>RTTS_BodyPart_WorkableStar_twinkle</def>
+          <!-- 武器相当部位に対する攻撃不可、という意味でのカバレッジO (不思議な力で切った張ったをしている想定なため) -->
+          <coverage>0.0</coverage>
+          <groups>
+            <!-- `//ThingDef[defName="RTTS_Mech_alpha_star"]/race/tools` で参照されていて、この部位で殴ってる扱いになる -->
+            <li>RTTS_TwinkleAttackTool</li>
+          </groups>
         </li>
         <li>
           <!-- 追加部位: 隔壁内部 -->
           <def>RTTS_BodyPart_WorkableStar_ArmoredBox</def>
-          <customLabel>armored box</customLabel>
-          <coverage>0.26</coverage>
-          <depth>Inside</depth>
+          <coverage>0.39</coverage>
           <parts>
             <li>
               <def>ArtificialBrain</def>
-              <customLabel>artificial brain</customLabel>
-              <coverage>0.35</coverage>
+              <coverage>0.20</coverage>
               <depth>Inside</depth>
             </li>
             <li>
-              <def>MechanicalThoraxCanManipulate</def>
-              <coverage>0.25</coverage>
+              <def>RTTS_BodyPart_WorkableStar_levitator</def>
+              <coverage>0.10</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>RTTS_BodyPart_WorkableStar_telekinesis</def>
+              <coverage>0.10</coverage>
               <depth>Inside</depth>
             </li>
             <li>
               <def>Reactor</def>
-              <coverage>0.15</coverage>
+              <coverage>0.10</coverage>
               <depth>Inside</depth>
             </li>
             <li>
               <def>FluidReprocessor</def>
-              <coverage>0.15</coverage>
+              <coverage>0.10</coverage>
               <depth>Inside</depth>
             </li>
-          </parts>
-        </li>
-        <li>
-          <def>MechanicalLeg</def>
-          <customLabel>front left wing</customLabel>
-          <coverage>0.16</coverage>
-          <height>Bottom</height>
-          <parts>
             <li>
-              <def>MechanicalFoot</def>
-              <customLabel>front left sensor</customLabel>
-              <coverage>0.5</coverage>
-              <groups>
-                <li>FrontLeftLeg</li>
-              </groups>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>MechanicalLeg</def>
-          <customLabel>front right wing</customLabel>
-          <coverage>0.16</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>MechanicalFoot</def>
-              <customLabel>front right sensor</customLabel>
-              <coverage>0.5</coverage>
-              <groups>
-                <li>FrontRightLeg</li>
-              </groups>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>MechanicalLeg</def>
-          <customLabel>rear left wing</customLabel>
-          <coverage>0.16</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>MechanicalFoot</def>
-              <customLabel>rear left sensor</customLabel>
-              <coverage>0.5</coverage>
-            </li>
-          </parts>
-        </li>
-        <li>
-          <def>MechanicalLeg</def>
-          <customLabel>rear right wing</customLabel>
-          <coverage>0.16</coverage>
-          <height>Bottom</height>
-          <parts>
-            <li>
-              <def>MechanicalFoot</def>
-              <customLabel>rear right sensor</customLabel>
-              <coverage>0.5</coverage>
+              <def>FluidReprocessor</def>
+              <coverage>0.10</coverage>
+              <depth>Inside</depth>
             </li>
           </parts>
         </li>
