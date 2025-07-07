@@ -8,21 +8,13 @@
     parts の木構造は以下の通り
       RTTS_BodyPart_WorkableStar_Torso [胸部]
         ├── RTTS_BodyPart_WorkableStar_Edge [頭部]
-        │   ├── SightSensor [視覚センサー]
-        │   ├── SightSensor [視覚センサー]
-        │   ├── HearingSensor [聴覚センサー]
-        │   ├── HearingSensor [聴覚センサー]
-        │   └── SmellSensor [嗅覚センサー]
         ├── RTTS_BodyPart_WorkableStar_Edge [前左翼]
         ├── RTTS_BodyPart_WorkableStar_Edge [前右翼]
         ├── RTTS_BodyPart_WorkableStar_Edge [後左翼]
         ├── RTTS_BodyPart_WorkableStar_Edge [後右翼]
         └── RTTS_BodyPart_WorkableStar_ArmoredBox [隔壁内部]
-            ├── ArtificialBrain [人工脳]
-            ├── RTTS_BodyPart_WorkableStar_levitator [浮力発生装置(移動用)]
-            ├── RTTS_BodyPart_WorkableStar_telekinesis [テレキネシス装置(作業用)]
-            ├── Reactor [リアクター(心臓相当)]
-            └── FluidReprocessor (x2) [流体再処理装置(肝臓相当)]
+          └── RTTS_BodyPart_WorkableStar_ArmoredBox [隔壁内部]
+            └── RTTS_BodyPart_WorkableStar_core [重要パーツ]
   -->
   <BodyDef>
     <defName>RTTS_Mech_Body_WorkableStar</defName>
@@ -40,32 +32,7 @@
           <customLabel>head edge</customLabel>
           <coverage>0.12</coverage>
           <height>Top</height>
-          <parts>
-            <li>
-              <def>SightSensor</def>
-              <customLabel>left sight sensor</customLabel>
-              <coverage>0.13</coverage>
-            </li>
-            <li>
-              <def>SightSensor</def>
-              <customLabel>right sight sensor</customLabel>
-              <coverage>0.13</coverage>
-            </li>
-            <li>
-              <def>HearingSensor</def>
-              <customLabel>left hearing sensor</customLabel>
-              <coverage>0.10</coverage>
-            </li>
-            <li>
-              <def>HearingSensor</def>
-              <customLabel>right hearing sensor</customLabel>
-              <coverage>0.10</coverage>
-            </li>
-            <li>
-              <def>SmellSensor</def>
-              <coverage>0.10</coverage>
-            </li>
-          </parts>
+          <depth>Outside</depth>
         </li>
         <li>
           <def>RTTS_BodyPart_WorkableStar_Edge</def>
@@ -111,34 +78,17 @@
           <coverage>0.39</coverage>
           <parts>
             <li>
-              <def>ArtificialBrain</def>
-              <coverage>0.20</coverage>
+              <def>RTTS_BodyPart_WorkableStar_ArmoredBox</def>
+              <coverage>0.30</coverage>
+              <customLabel>armored box inside</customLabel>
               <depth>Inside</depth>
-            </li>
-            <li>
-              <def>RTTS_BodyPart_WorkableStar_levitator</def>
-              <coverage>0.10</coverage>
-              <depth>Inside</depth>
-            </li>
-            <li>
-              <def>RTTS_BodyPart_WorkableStar_telekinesis</def>
-              <coverage>0.10</coverage>
-              <depth>Inside</depth>
-            </li>
-            <li>
-              <def>Reactor</def>
-              <coverage>0.10</coverage>
-              <depth>Inside</depth>
-            </li>
-            <li>
-              <def>FluidReprocessor</def>
-              <coverage>0.10</coverage>
-              <depth>Inside</depth>
-            </li>
-            <li>
-              <def>FluidReprocessor</def>
-              <coverage>0.10</coverage>
-              <depth>Inside</depth>
+              <parts>
+                <li>
+                  <def>RTTS_BodyPart_WorkableStar_core</def>
+                  <coverage>0.30</coverage>
+                  <depth>Inside</depth>
+                </li>
+              </parts>
             </li>
           </parts>
         </li>

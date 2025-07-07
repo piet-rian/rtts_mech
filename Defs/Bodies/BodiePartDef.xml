@@ -6,6 +6,7 @@
     <defName>RTTS_BodyPart_WorkableStar_Edge</defName>
     <label>edge</label>
     <hitPoints>50</hitPoints> <!-- MechanicalLeg(30) + MechanicalFoot(20) -->
+    <frostbiteVulnerability>2</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <destroyableByDamage>false</destroyableByDamage>
     <skinCovered>false</skinCovered>
@@ -39,36 +40,6 @@
     <bleedRate>0</bleedRate>
   </BodyPartDef>
 
-  <!-- 移動用の浮力発生パーツ、タグ以外のステータスについてはリアクターに準拠 -->
-  <BodyPartDef>
-    <defName>RTTS_BodyPart_WorkableStar_levitator</defName>
-    <label>levitator</label>
-    <hitPoints>20</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <solid>true</solid>
-    <alive>false</alive>
-    <bleedRate>0</bleedRate>
-    <tags>
-      <li>MovingLimbCore</li>
-    </tags>
-  </BodyPartDef>
-
-  <!-- 作業用の念力発生パーツ、タグ以外のステータスについてはリアクターに準拠 -->
-  <BodyPartDef>
-    <defName>RTTS_BodyPart_WorkableStar_telekinesis</defName>
-    <label>telekinesis generator</label>
-    <hitPoints>20</hitPoints>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <solid>true</solid>
-    <alive>false</alive>
-    <bleedRate>0</bleedRate>
-    <tags>
-      <li>ManipulationLimbCore</li>
-    </tags>
-  </BodyPartDef>
-
   <!-- 攻撃用のパーツ -->
   <BodyPartDef>
     <defName>RTTS_BodyPart_WorkableStar_twinkle</defName>
@@ -81,6 +52,27 @@
     <bleedRate>0</bleedRate>
     <tags>
       <li>ManipulationLimbCore</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <!-- 星の核、センサーやらリアクターやら全部のせ -->
+    <defName>RTTS_BodyPart_WorkableStar_core</defName>
+    <label>core</label>
+    <hitPoints>150</hitPoints> <!-- タグ付きパーツ全部のせでだいたいこんぐらいになるはず  -->
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>SightSource</li> <!-- 視覚 -->
+      <li>HearingSource</li> <!-- 聴覚 -->
+      <li>ManipulationLimbCore</li> <!-- 操作用 -->
+      <li>MovingLimbCore</li> <!-- 移動用 -->
+      <li>ConsciousnessSource</li> <!-- 意識 -->
+      <li>BloodPumpingSource</li> <!-- 血液ポンプ -->
+      <li>BloodFiltrationSource</li> <!-- 血液ろ過 -->
     </tags>
   </BodyPartDef>
 
