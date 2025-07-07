@@ -6,15 +6,17 @@
     <authors>
         <li>piet-rian</li>
     </authors>
-    <description>
-        TODO
+    <description> Add ...
+        - Highly efficient industrial mechanoids.
+        - Melee combat mechanoids.
+        - Recipe for detoxifying toxic waste packs.
     </description>
     <supportedVersions>
         <li>1.6</li>
     </supportedVersions>
 
     <modVersion>1.0</modVersion>
-    <url>https://github.com/piet-rian/rtts_core</url>
+    <url>https://github.com/piet-rian/rtts_mech</url>
 
 
     <modDependencies>

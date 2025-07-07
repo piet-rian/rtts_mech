@@ -10,9 +10,8 @@
       description においてはカラータグ `<color=#FF0000>xxx</color>` で色を変えられる
       ただし、 <> は &lt; &gt; に直す必要あり
     -->
-    <description>TODO
-      \n\n&lt;color=#808080&gt;TODO&lt;/color&gt;
-      \n&lt;color=#808080&gt;TODO&lt;/color&gt;</description>
+    <description>Mechanoid for Hauling and Melee Fighting. Has Shield, Has Emp Melee Attack.
+      \n\n&lt;color=#808080&gt;EnabledWork: Firefighter, BasicWorker, Hauling&lt;/color&gt;</description>
 
     <statBases>
       <MarketValue>4240</MarketValue> <!-- 市場価値 -->
