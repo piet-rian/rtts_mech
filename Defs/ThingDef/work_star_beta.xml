@@ -13,6 +13,7 @@
       <!-- 実施可能な作業の定義 -->
       <mechEnabledWorkTypes>
         <li>Firefighter</li><!-- 消火 -->
+        <li>Handling</li> <!-- 調教 -->
         <li>PlantCutting</li> <!-- 採集伐採 -->
         <li>Growing</li> <!-- 栽培 -->
         <li>Hauling</li> <!-- 運搬 -->
@@ -24,6 +25,7 @@
         <Firefighter>1</Firefighter>
         <PlantCutting>1</PlantCutting>
         <Growing>2</Growing>
+        <Handling>3</Handling>
         <Hauling>4</Hauling>
         <Cleaning>4</Cleaning>
       </mechWorkTypePriorities>
