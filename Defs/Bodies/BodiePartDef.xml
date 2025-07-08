@@ -68,6 +68,7 @@
     <tags>
       <li>SightSource</li> <!-- 視覚 -->
       <li>HearingSource</li> <!-- 聴覚 -->
+      <li>TalkingSource</li> <!-- 発声, 調教とかで必要になる -->
       <li>ManipulationLimbCore</li> <!-- 操作用 -->
       <li>MovingLimbCore</li> <!-- 移動用 -->
       <li>ConsciousnessSource</li> <!-- 意識 -->
