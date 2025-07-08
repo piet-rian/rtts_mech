@@ -26,7 +26,7 @@
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
 
-      <BandwidthCost>2</BandwidthCost> <!-- 要求帯域幅 -->
+      <BandwidthCost>3</BandwidthCost> <!-- 要求帯域幅 -->
       <ControlTakingTime>4</ControlTakingTime> <!-- 制御取り戻しにかかる時間 -->
       <MechEnergyLossPerHP>0.10</MechEnergyLossPerHP> <!-- HPあたりのエネルギー損失(多分回復時のやつ) -->
       <WastepacksPerRecharge>1</WastepacksPerRecharge> <!-- 再充電あたりの廃棄物パック算出量 -->
