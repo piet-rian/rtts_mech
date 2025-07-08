@@ -6,13 +6,14 @@
     <defName>RTTS_Mech_gamma_star</defName>
     <label>work star gamma</label>
     <description>Mechanoid for handling and Cooking operations.
-      \n\n&lt;color=#808080&gt;EnabledWork: Firefighter, Handling, Cooking, Hauling, Cleaning&lt;/color&gt;</description>
+      \n\n&lt;color=#808080&gt;EnabledWork: Firefighter, Warden, Handling, Cooking, Hauling, Cleaning&lt;/color&gt;</description>
 
     <!-- 種族定義 -->
     <race>
       <!-- 実施可能な作業の定義 -->
       <mechEnabledWorkTypes>
         <li>Firefighter</li><!-- 消火 -->
+        <li>Warden</li><!-- 看守 -->
         <li>Handling</li> <!-- 調教 -->
         <li>Cooking</li> <!-- 料理 -->
         <li>Hauling</li> <!-- 運搬 -->
@@ -22,10 +23,11 @@
       <!-- 優先順位 -->
       <mechWorkTypePriorities>
         <Firefighter>1</Firefighter>
-        <Handling>1</Handling>
+        <Warden>1</Warden>
+        <Handling>3</Handling>
         <Cooking>2</Cooking>
         <Hauling>4</Hauling>
-        <Cleaning>4</Cleaning>
+        <Cleaning>3</Cleaning>
       </mechWorkTypePriorities>
     </race>
 
