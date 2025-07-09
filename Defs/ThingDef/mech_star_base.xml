@@ -72,6 +72,12 @@
         <feralMtbDays>999</feralMtbDays>
         <feralCascadeRadialDistance>25</feralCascadeRadialDistance>
       </li>
+      <!--
+        see. MayRequire
+        https://rimworldwiki.com/wiki/Modding_Tutorials/MayRequire
+      -->
+      <li Class="VEF.AnimalBehaviours.CompProperties_Floating"
+        MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" />
     </comps>
   </ThingDef>
 
