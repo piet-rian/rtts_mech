@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- 培養時のレシピ -->
-  <RecipeDef>
-    <defName>RTTS_Mech_Recipe_JetStar</defName>
-    <label>gestate JetStar</label>
+  <!-- ==== 培養時のレシピ ==== -->
+  <RecipeDef Abstract="True" Name="RTTS_Mech_Recipe_JetStar">
     <description>Gestate a JetStar</description>
     <jobString>Gestating JetStar.</jobString>
 
@@ -18,10 +16,6 @@
       <li>StandardMechtech</li>
       <li>RTTS_RESEARCH_PROJECT_1T</li> <!-- RTTS側の前提研究も必要とする -->
     </researchPrerequisites>
-
-    <workAmount>900</workAmount> <!-- 培養開始時の作業量 -->
-    <gestationCycles>1</gestationCycles> <!-- 培養サイクル数 -->
-    <formingTicks>30000</formingTicks> <!-- 培養サイクル一回あたりの時間, 半日ぐらい -->
     <mechanitorOnlyRecipe>true</mechanitorOnlyRecipe> <!-- メカニターのみが使用可能なレシピ -->
     <workSpeedStat>MechFormingSpeed</workSpeedStat> <!-- 作業速度のステータス -->
     <soundWorking>MechGestatorCycle_Initiating</soundWorking> <!-- 培養開始時の音 -->
@@ -31,6 +25,23 @@
       <li>LargeMechGestator</li>
     </recipeUsers>
 
+    <!-- 成果物(本レシピの場合は培養されるメカノイド) -->
+    <products>
+      <RTTS_Mech_jet_star>1</RTTS_Mech_jet_star>
+    </products>
+  </RecipeDef>
+
+  <!-- 促成培養レシピ(要求材料重め、時間短め) -->
+  <RecipeDef ParentName="RTTS_Mech_Recipe_JetStar">
+    <defName>RTTS_Mech_Recipe_JetStar_quickly</defName>
+    <label>gestate JetStar (quickly)</label>
+    <description>Gestate a JetStar quickly, but more materials needed.</description>
+    <jobString>Gestating JetStar (quickly).</jobString>
+
+    <workAmount>900</workAmount> <!-- 培養開始時の作業量 -->
+    <gestationCycles>1</gestationCycles> <!-- 培養サイクル数 -->
+    <formingTicks>30000</formingTicks> <!-- 培養サイクル一回あたりの時間, 半日ぐらい -->
+
     <!-- 素材 -->
     <ingredients Inherit="False">
       <li>
@@ -39,14 +50,33 @@
             <li>RTTS_STAR_PIECE</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>500</count>
       </li>
     </ingredients>
+  </RecipeDef>
 
-    <!-- 成果物(本レシピの場合は培養されるメカノイド) -->
-    <products>
-      <RTTS_Mech_jet_star>1</RTTS_Mech_jet_star>
-    </products>
+  <!-- 通常培養レシピ(要求材料少なめ、時間長め) -->
+  <RecipeDef ParentName="RTTS_Mech_Recipe_JetStar">
+    <defName>RTTS_Mech_Recipe_JetStar_unhurried</defName>
+    <label>gestate JetStar (unhurried)</label>
+    <description>Gestate a JetStar. this is original recipe.</description>
+    <jobString>Gestating JetStar (unhurried).</jobString>
+
+    <workAmount>1800</workAmount> <!-- 培養開始時の作業量 -->
+    <gestationCycles>1</gestationCycles> <!-- 培養サイクル数 -->
+    <formingTicks>30000</formingTicks> <!-- 培養サイクル一回あたりの時間, 半日ぐらい -->
+
+    <!-- 素材 -->
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RTTS_STAR_PIECE</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
   </RecipeDef>
 
 </Defs>

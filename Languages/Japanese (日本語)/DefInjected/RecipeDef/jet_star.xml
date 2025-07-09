@@ -1,11 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
 
-  <!-- EN: gestate JetStar -->
-  <RTTS_Mech_Recipe_JetStar.label>ジェットスターの培養</RTTS_Mech_Recipe_JetStar.label>
-  <!-- EN: Gestate a JetStar -->
-  <RTTS_Mech_Recipe_JetStar.description>ジェットスターを培養する</RTTS_Mech_Recipe_JetStar.description>
-  <!-- EN: Gestating JetStar. -->
-  <RTTS_Mech_Recipe_JetStar.jobString>ジェットスターを培養中。</RTTS_Mech_Recipe_JetStar.jobString>
+  <!-- EN: gestate JetStar (quickly) -->
+  <RTTS_Mech_Recipe_JetStar_quickly.label>ジェットスターの培養(急速)</RTTS_Mech_Recipe_JetStar_quickly.label>
+  <!-- EN: Gestate a JetStar quickly, but more materials needed. -->
+  <RTTS_Mech_Recipe_JetStar_quickly.description>ジェットスターを急速培養しますが、必要素材が増えます。</RTTS_Mech_Recipe_JetStar_quickly.description>
+  <!-- EN: Gestating JetStar (quickly). -->
+  <RTTS_Mech_Recipe_JetStar_quickly.jobString>ジェットスターを急速培養中</RTTS_Mech_Recipe_JetStar_quickly.jobString>
+
+  <!-- EN: gestate JetStar (unhurried) -->
+  <RTTS_Mech_Recipe_JetStar_unhurried.label>ジェットスターの培養</RTTS_Mech_Recipe_JetStar_unhurried.label>
+  <!-- EN: Gestate a JetStar. this is original recipe. -->
+  <RTTS_Mech_Recipe_JetStar_unhurried.description>ジェットスターを培養します。本来の培養方式です。</RTTS_Mech_Recipe_JetStar_unhurried.description>
+  <!-- EN: Gestating JetStar (unhurried). -->
+  <RTTS_Mech_Recipe_JetStar_unhurried.jobString>ジェットスターを培養中</RTTS_Mech_Recipe_JetStar_unhurried.jobString>
 
 </LanguageData>
