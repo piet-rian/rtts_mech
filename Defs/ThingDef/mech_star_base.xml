@@ -73,11 +73,15 @@
         <feralCascadeRadialDistance>25</feralCascadeRadialDistance>
       </li>
       <!--
-        see. MayRequire
-        https://rimworldwiki.com/wiki/Modding_Tutorials/MayRequire
+        Vanilla Expanded Framework が入っている場合、星がホバーするようになる
+        see. https://github.com/Vanilla-Expanded/VanillaExpandedFramework/wiki/Floating
       -->
       <li Class="VEF.AnimalBehaviours.CompProperties_Floating"
         MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" />
+      <!--
+        `MayRequire` については以下のドキュメント参照
+        https://rimworldwiki.com/wiki/Modding_Tutorials/MayRequire
+      -->
     </comps>
   </ThingDef>
 
