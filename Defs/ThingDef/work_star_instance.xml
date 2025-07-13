@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!-- ワークスター・アルファ : 作業用メカノイド : 建設, 採掘担当 -->
+  <!-- ワークスター : 汎用作業用メカノイド -->
 
   <ThingDef ParentName="RTTS_Mech_work_star">
     <defName>RTTS_Mech_work_star_instance</defName>
