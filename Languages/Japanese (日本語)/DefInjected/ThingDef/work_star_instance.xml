@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: work star -->
+  <RTTS_Mech_work_star_instance.label>ワークスター</RTTS_Mech_work_star_instance.label>
+  <!-- EN: Mechanoid for meny operations. -->
+  <RTTS_Mech_work_star_instance.description>汎用作業用メカノイド</RTTS_Mech_work_star_instance.description>
+  <!-- EN: twinkle -->
+  <RTTS_Mech_work_star_instance.tools.twinkle.label>キラキラ</RTTS_Mech_work_star_instance.tools.twinkle.label>
+
+</LanguageData>

@@ -63,8 +63,8 @@
     <jobString>Gestating JetStar (unhurried).</jobString>
 
     <workAmount>1800</workAmount> <!-- 培養開始時の作業量 -->
-    <gestationCycles>1</gestationCycles> <!-- 培養サイクル数 -->
-    <formingTicks>30000</formingTicks> <!-- 培養サイクル一回あたりの時間, 半日ぐらい -->
+    <gestationCycles>3</gestationCycles> <!-- 培養サイクル数, x3 なのでトータル3日ぐらい -->
+    <formingTicks>60000</formingTicks> <!-- 培養サイクル一回あたりの時間, 24時間 -->
 
     <!-- 素材 -->
     <ingredients Inherit="False">

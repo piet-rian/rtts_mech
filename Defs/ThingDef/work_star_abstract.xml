@@ -15,7 +15,7 @@
       <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
 
-      <BandwidthCost>2</BandwidthCost> <!-- 要求帯域幅 -->
+      <BandwidthCost>3</BandwidthCost> <!-- 要求帯域幅 -->
       <ControlTakingTime>4</ControlTakingTime> <!-- 制御取り戻しにかかる時間 -->
       <MechEnergyLossPerHP>0.10</MechEnergyLossPerHP> <!-- HPあたりのエネルギー損失(多分回復時のやつ) -->
       <WastepacksPerRecharge>1</WastepacksPerRecharge> <!-- 再充電あたりの廃棄物パック算出量 -->
@@ -31,8 +31,8 @@
     <race>
       <body>RTTS_Mech_Body_WorkableStar</body> <!-- `BodyDef_star.xml` で定義されているボディ -->
       <mechWeightClass>Light</mechWeightClass> <!-- メカの重量クラス -->
-      <baseBodySize>0.40</baseBodySize> <!-- 体格、1下回ってると運搬能力にマイナス補正 -->
-      <baseHealthScale>0.8</baseHealthScale> <!-- 基本HP倍率 -->
+      <baseBodySize>0.6</baseBodySize> <!-- 体格、1下回ってると運搬能力にマイナス補正 -->
+      <baseHealthScale>0.6</baseHealthScale> <!-- 基本HP倍率 -->
     </race>
 
     <!-- 装備なし近接攻撃時の内容定義 -->

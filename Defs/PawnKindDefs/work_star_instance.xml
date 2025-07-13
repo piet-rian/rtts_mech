@@ -2,35 +2,35 @@
 <Defs>
 
   <PawnKindDef ParentName="RTTS_Mech_PawnKind_work_star">
-    <defName>RTTS_Mech_PawnKind_alpha_star</defName>
-    <label>work star alpha</label>
-    <race>RTTS_Mech_alpha_star</race> <!-- ThingDefの指定 -->
+    <defName>RTTS_Mech_PawnKind_work_star_instance</defName>
+    <label>work star</label>
+    <race>RTTS_Mech_work_star_instance</race> <!-- ThingDefの指定 -->
 
     <!-- ライフステージごとの指定(基本的には画像周りの指定) -->
     <lifeStages>
       <li>
         <bodyGraphicData> <!-- メカノイド(生体?)のグラフィック定義 -->
-          <texPath>Races/Alpha/New</texPath>
-          <maskPath>Races/Alpha/Mask</maskPath>
+          <texPath>Races/Gamma/New</texPath>
+          <maskPath>Races/Gamma/Mask</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>0.8</drawSize>
         </bodyGraphicData>
         <corpseGraphicData> <!--  メカノイド(死体)のグラフィック定義 -->
-          <texPath>Races/Alpha/DeathNew</texPath>
+          <texPath>Races/Gamma/DeathNew</texPath>
           <drawSize>0.8</drawSize>
         </corpseGraphicData>
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Races/Alpha/Old</texPath>
-          <maskPath>Races/Alpha/Mask</maskPath>
+          <texPath>Races/Gamma/Old</texPath>
+          <maskPath>Races/Gamma/Mask</maskPath>
           <shaderType>CutoutWithOverlay</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>0.8</drawSize>
         </bodyGraphicData>
         <corpseGraphicData>
-          <texPath>Races/Alpha/DeathOld</texPath>
+          <texPath>Races/Gamma/DeathOld</texPath>
           <drawSize>0.8</drawSize>
         </corpseGraphicData>
       </li>
