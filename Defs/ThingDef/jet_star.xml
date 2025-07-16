@@ -17,21 +17,13 @@
       <MarketValue>5000</MarketValue> <!-- 市場価値 -->
       <MoveSpeed>8.00</MoveSpeed> <!-- 移動速度, 8.0を超えると経路計算的な負荷が上がるという話を何処かで見聞きしている -->
 
-      <!-- 許容温度設定 -->
-      <ComfyTemperatureMin>-273</ComfyTemperatureMin>
-      <ComfyTemperatureMax>255</ComfyTemperatureMax>
-
       <!-- ダメージ種別ごとの軽減率 -->
       <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
 
-      <BandwidthCost>3</BandwidthCost> <!-- 要求帯域幅 -->
-      <ControlTakingTime>4</ControlTakingTime> <!-- 制御取り戻しにかかる時間 -->
-      <MechEnergyLossPerHP>0.10</MechEnergyLossPerHP> <!-- HPあたりのエネルギー損失(多分回復時のやつ) -->
-      <WastepacksPerRecharge>1</WastepacksPerRecharge> <!-- 再充電あたりの廃棄物パック算出量 -->
       <MeleeDodgeChance>20</MeleeDodgeChance> <!-- 近接回避率 -->
-      <EnergyShieldRechargeRate>1</EnergyShieldRechargeRate>
+      <EnergyShieldRechargeRate>1</EnergyShieldRechargeRate> <!-- エネルギーシールドの再充電速度 -->
     </statBases>
 
     <!-- 解体時の算出 -->

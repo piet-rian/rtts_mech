@@ -9,7 +9,16 @@
       <MeatAmount>0</MeatAmount> <!-- 解体時の肉の量 -->
       <ToxicResistance>1.00</ToxicResistance> <!-- 毒耐性 -->
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance> <!-- 毒環境耐性 -->
-      <WorkSpeedGlobal>3</WorkSpeedGlobal> <!-- 作業速度 3で概ねさん倍 -->
+      <EMPResistance>1.00</EMPResistance> <!-- EMP耐性 -->
+      <WorkSpeedGlobal>3</WorkSpeedGlobal> <!-- 作業速度 3で概ね3倍 -->
+
+      <ComfyTemperatureMin>-273</ComfyTemperatureMin> <!-- 最低許容温度 -->
+      <ComfyTemperatureMax>512</ComfyTemperatureMax> <!-- 最高許容温度 -->
+
+      <BandwidthCost>3</BandwidthCost> <!-- 要求帯域幅 -->
+      <ControlTakingTime>4</ControlTakingTime> <!-- 制御取り戻しにかかる時間 -->
+      <MechEnergyLossPerHP>0.10</MechEnergyLossPerHP> <!-- HPあたりのエネルギー損失(多分回復時のやつ) -->
+      <WastepacksPerRecharge>1</WastepacksPerRecharge> <!-- 再充電あたりの廃棄物パック算出量 -->
     </statBases>
 
     <receivesSignals>true</receivesSignals>
