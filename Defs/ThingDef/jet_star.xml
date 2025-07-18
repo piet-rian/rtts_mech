@@ -18,8 +18,8 @@
       <MoveSpeed>8.00</MoveSpeed> <!-- 移動速度, 8.0を超えると経路計算的な負荷が上がるという話を何処かで見聞きしている -->
 
       <!-- ダメージ種別ごとの軽減率 -->
-      <ArmorRating_Sharp>0.80</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.00</ArmorRating_Blunt>
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
 
       <MeleeDodgeChance>20</MeleeDodgeChance> <!-- 近接回避率 -->
