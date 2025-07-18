@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseMechCharger">
+    <defName>RTTS_Mech_Charger</defName>
+    <label>starry mech recharger</label>
+    <description>All kinds of mechanoids can recharge here. During recharge, this recharger produces
+      toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to
+      time.</description>
+    <designationCategory>RTTS_DC_RTTS</designationCategory>
+    <graphicData>
+      <texPath>Building/recharger</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsMisc</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>25</Mass>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <building>
+      <requiredMechWeightClasses>
+        <li>Light</li>
+        <li>Medium</li>
+        <li>Heavy</li>
+        <li>UltraHeavy</li>
+      </requiredMechWeightClasses>
+      <barDrawData>
+        <north>
+          <preRotationOffset>(0.002166748,-0.3722534)</preRotationOffset>
+          <size>(0.4398041,0.1365509)</size>
+        </north>
+        <south>
+          <preRotationOffset>(-0.002609305,-0.6002655)</preRotationOffset>
+          <size>(0.4398041,0.121376)</size>
+        </south>
+        <east>
+          <preRotationOffset>(0.04148867,0.6301422)</preRotationOffset>
+          <size>(0.4066238,0.1425552)</size>
+        </east>
+        <west>
+          <preRotationOffset>(-0.02767944,0.6171188)</preRotationOffset>
+          <size>(0.397522,0.1395264)</size>
+        </west>
+      </barDrawData>
+    </building>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <costList>
+      <RTTS_STAR_PIECE>100</RTTS_STAR_PIECE>
+    </costList>
+    <researchPrerequisites>
+      <li>BasicMechtech</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_ThingContainer">
+        <compClass>CompThingContainer</compClass>
+        <stackLimit>5</stackLimit>
+        <drawContainedThing>false</drawContainedThing>
+        <dropEffecterDef>MechChargerWasteRemoved</dropEffecterDef>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <!-- memo.
+        CompProperties_Power? ないしは CompPowerTrader あたりの指定がないとメカへの給電そのものが出来ない
+        また、電気さえ通っていれば燃料切れても充電し続けられる、といった挙動によりXMLのみでの燃料式メカ充電器は実装できない
+      -->
+    </comps>
+  </ThingDef>
+</Defs>

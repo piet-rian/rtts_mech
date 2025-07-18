@@ -18,6 +18,10 @@
 
 - <https://www.flaticon.com/free-icon/star_3640329>
 
+### 充電器
+
+- <https://www.flaticon.com/free-icon/clear-night_13883351>
+
 ### 効果音
 
 - <https://145.rei-yumesaki.net/article/427522280.html>
