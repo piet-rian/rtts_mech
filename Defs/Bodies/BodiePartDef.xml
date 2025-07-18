@@ -5,7 +5,7 @@
   <BodyPartDef>
     <defName>RTTS_BodyPart_WorkableStar_Edge</defName>
     <label>edge</label>
-    <hitPoints>50</hitPoints> <!-- MechanicalLeg(30) + MechanicalFoot(20) -->
+    <hitPoints>100</hitPoints>
     <frostbiteVulnerability>2</frostbiteVulnerability>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <destroyableByDamage>false</destroyableByDamage>
@@ -19,7 +19,7 @@
   <BodyPartDef>
     <defName>RTTS_BodyPart_WorkableStar_Torso</defName>
     <label>torso</label>
-    <hitPoints>40</hitPoints>
+    <hitPoints>80</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <destroyableByDamage>false</destroyableByDamage>
     <skinCovered>false</skinCovered>

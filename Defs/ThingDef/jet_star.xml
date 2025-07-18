@@ -14,7 +14,7 @@
       \n\n&lt;color=#808080&gt;EnabledWork: Firefighter, BasicWorker, Hauling&lt;/color&gt;</description>
 
     <statBases>
-      <MarketValue>5000</MarketValue> <!-- 市場価値 -->
+      <MarketValue>7000</MarketValue> <!-- 市場価値 -->
       <MoveSpeed>8.00</MoveSpeed> <!-- 移動速度, 8.0を超えると経路計算的な負荷が上がるという話を何処かで見聞きしている -->
 
       <!-- ダメージ種別ごとの軽減率 -->
@@ -55,6 +55,7 @@
 
     <comps>
       <li Class="CompProperties_ProjectileInterceptor">
+        <!-- 実質的に自分用のシールド -->
         <radius>1.0</radius>
         <interceptGroundProjectiles>true</interceptGroundProjectiles>
         <color>(0.4, 0.4, 0.4)</color>
@@ -77,14 +78,20 @@
         <capacities>
           <li>Cut</li>
         </capacities>
-        <power>31</power>
-        <cooldownTime>1.5</cooldownTime>
-        <armorPenetration>0.55</armorPenetration>
+        <power>2</power>
+        <cooldownTime>0.1</cooldownTime>
+        <armorPenetration>0.99</armorPenetration>
         <chanceFactor>1.0</chanceFactor>
         <extraMeleeDamages>
           <li>
+            <!-- 多分これでEMPグレネードと同じぐらいの強度のはず -->
             <def>EMP</def>
-            <amount>72</amount>
+            <amount>50</amount>
+          </li>
+          <li>
+            <!-- 無力化という意味で凍傷が強い気がするのでお試しで -->
+            <def>Frostbite</def>
+            <amount>7</amount>
           </li>
         </extraMeleeDamages>
         <!-- 体のどこのパーツ群で殴っている扱いにしているのか -->

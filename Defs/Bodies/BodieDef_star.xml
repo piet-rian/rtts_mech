@@ -73,19 +73,21 @@
           </groups>
         </li>
         <li>
-          <!-- 追加部位: 隔壁内部 -->
+          <!-- 追加部位: 多重隔壁(外) -->
           <def>RTTS_BodyPart_WorkableStar_ArmoredBox</def>
-          <coverage>0.39</coverage>
+          <coverage>0.20</coverage>
           <parts>
             <li>
+              <!-- 追加部位: 多重隔壁(内) -->
               <def>RTTS_BodyPart_WorkableStar_ArmoredBox</def>
               <coverage>0.30</coverage>
               <customLabel>armored box inside</customLabel>
               <depth>Inside</depth>
               <parts>
                 <li>
+                  <!-- 追加部位: 重要機能全部入り部位つめあわせ -->
                   <def>RTTS_BodyPart_WorkableStar_core</def>
-                  <coverage>0.30</coverage>
+                  <coverage>0.40</coverage>
                   <depth>Inside</depth>
                 </li>
               </parts>
