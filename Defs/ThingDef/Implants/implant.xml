@@ -13,6 +13,22 @@
       <!-- 各段階で3回まで -->
       <MaxInstallCount>3</MaxInstallCount>
     </statBases>
+
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
+      <recipeUsers>
+        <li>RTTS_STAR_CIRCLE</li>
+      </recipeUsers>
+      <useIngredientsForColor>false</useIngredientsForColor>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <displayPriority>650</displayPriority>
+    </recipeMaker>
   </ThingDef>
 
   <!-- 基礎段階の帯域幅インプラント -->
