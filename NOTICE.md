@@ -29,4 +29,4 @@
 
 ### 効果音
 
-- <https://145.rei-yumesaki.net/article/427525136.html>
+- <https://145.rei-yumesaki.net/article/427522280.html>
