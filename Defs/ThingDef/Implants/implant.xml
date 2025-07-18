@@ -2,12 +2,12 @@
 <Defs>
   <!-- コントロールサブリンクの定義を元に -->
 
-  <!-- Bandwidth sublink -->
+  <!-- Bandwidth implant -->
   <ThingDef Abstract="True"
-    Name="RTTS_BandwidthSublinkImplantBase"
+    Name="RTTS_BandwidthImplant_Base"
     ParentName="MechanitorImplantCraftableBase">
     <descriptionHyperlinks>
-      <HediffDef>RTTS_BandwidthSublinkImplantHediff</HediffDef>
+      <HediffDef>RTTS_BandwidthImplantHediff</HediffDef>
     </descriptionHyperlinks>
     <statBases>
       <!-- 各段階で3回まで -->
@@ -32,12 +32,12 @@
   </ThingDef>
 
   <!-- 基礎段階の帯域幅インプラント -->
-  <ThingDef ParentName="RTTS_BandwidthSublinkImplantBase">
-    <defName>RTTS_BandwidthSublinkImplant_Basic</defName>
+  <ThingDef ParentName="RTTS_BandwidthImplant_Base">
+    <defName>RTTS_BandwidthImplant_Basic</defName>
     <label>twinkles of stars(basic)</label>
     <description>A neural implant which gives a mechanitor an additional bandwidth (+3).\n\n
-      This standard-tier sublink can only increase the control group count up to 3.
-      To go higher, a higher-tier sublink implant must be used.\n\n
+      This basic-tier implant can only increase the bandwidth up to 9.
+      To go higher, a higher-tier 'twinkles of stars' implant must be used.\n\n
       It can be self-installed without surgery.\n\n
       This implant can be installed up to 3 times to increase its effect.</description>
     <costList>
@@ -58,7 +58,7 @@
         <userMustHaveHediff>MechlinkImplant</userMustHaveHediff>
       </li>
       <li Class="CompProperties_UseEffectInstallImplant">
-        <hediffDef>RTTS_BandwidthSublinkImplantHediff</hediffDef>
+        <hediffDef>RTTS_BandwidthImplantHediff</hediffDef>
         <bodyPart>Brain</bodyPart>
         <canUpgrade>true</canUpgrade>
         <maxSeverity>3</maxSeverity>
@@ -66,11 +66,11 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="RTTS_BandwidthSublinkImplantBase">
-    <defName>RTTS_BandwidthSublinkImplant_Standard</defName>
+  <ThingDef ParentName="RTTS_BandwidthImplant_Base">
+    <defName>RTTS_BandwidthImplant_Standard</defName>
     <label>twinkles of stars(standard)</label>
     <description>A neural implant which gives a mechanitor an additional bandwidth (+3).\n\n
-      This high-tier implant can increase the control group count up to 6.\n\n
+      This standard-tier implant can increase the bandwidth up to 18.\n\n
       It can be self-installed without surgery.\n\n
       This implant can be installed up to 3 times to increase its effect.</description>
     <costList>
@@ -86,11 +86,11 @@
       <li Class="CompProperties_Usable">
         <compClass>CompUsableImplant</compClass>
         <useJob>UseItem</useJob>
-        <useLabel>Implant high sublink</useLabel>
+        <useLabel>Implant {0_label}</useLabel>
         <userMustHaveHediff>MechlinkImplant</userMustHaveHediff>
       </li>
       <li Class="CompProperties_UseEffectInstallImplant">
-        <hediffDef>RTTS_BandwidthSublinkImplantHediff</hediffDef>
+        <hediffDef>RTTS_BandwidthImplantHediff</hediffDef>
         <bodyPart>Brain</bodyPart>
         <canUpgrade>true</canUpgrade>
         <requiresExistingHediff>true</requiresExistingHediff>
@@ -100,11 +100,11 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="RTTS_BandwidthSublinkImplantBase">
-    <defName>RTTS_BandwidthSublinkImplant_High</defName>
+  <ThingDef ParentName="RTTS_BandwidthImplant_Base">
+    <defName>RTTS_BandwidthImplant_High</defName>
     <label>twinkles of stars(high)</label>
     <description>A neural implant which gives a mechanitor an additional bandwidth (+3).\n\n
-      This ultra-tier implant can increase the control group count up to 9.\n\n
+      This high-tier implant can increase the bandwidth up to 27.\n\n
       It can be self-installed without surgery.\n\n
       This implant can be installed up to 3 times to increase its effect.</description>
     <costList>
@@ -120,11 +120,11 @@
       <li Class="CompProperties_Usable">
         <compClass>CompUsableImplant</compClass>
         <useJob>UseItem</useJob>
-        <useLabel>Implant ultra sublink</useLabel>
+        <useLabel>Implant {0_label}</useLabel>
         <userMustHaveHediff>MechlinkImplant</userMustHaveHediff>
       </li>
       <li Class="CompProperties_UseEffectInstallImplant">
-        <hediffDef>RTTS_BandwidthSublinkImplantHediff</hediffDef>
+        <hediffDef>RTTS_BandwidthImplantHediff</hediffDef>
         <bodyPart>Brain</bodyPart>
         <canUpgrade>true</canUpgrade>
         <requiresExistingHediff>true</requiresExistingHediff>
@@ -134,11 +134,11 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="RTTS_BandwidthSublinkImplantBase">
-    <defName>RTTS_BandwidthSublinkImplant_Ultra</defName>
+  <ThingDef ParentName="RTTS_BandwidthImplant_Base">
+    <defName>RTTS_BandwidthImplant_Ultra</defName>
     <label>twinkles of stars(ultra)</label>
     <description>A neural implant which gives a mechanitor an additional bandwidth (+3).\n\n
-      This ultimate-tier implant can increase the control group count up to 12.\n\n
+      This ultra-tier implant can increase the bandwidth up to 36.\n\n
       It can be self-installed without surgery.\n\n
       This implant can be installed up to 3 times to increase its effect.</description>
     <costList>
@@ -154,11 +154,11 @@
       <li Class="CompProperties_Usable">
         <compClass>CompUsableImplant</compClass>
         <useJob>UseItem</useJob>
-        <useLabel>Implant ultimate sublink</useLabel>
+        <useLabel>Implant {0_label}</useLabel>
         <userMustHaveHediff>MechlinkImplant</userMustHaveHediff>
       </li>
       <li Class="CompProperties_UseEffectInstallImplant">
-        <hediffDef>RTTS_BandwidthSublinkImplantHediff</hediffDef>
+        <hediffDef>RTTS_BandwidthImplantHediff</hediffDef>
         <bodyPart>Brain</bodyPart>
         <canUpgrade>true</canUpgrade>
         <requiresExistingHediff>true</requiresExistingHediff>

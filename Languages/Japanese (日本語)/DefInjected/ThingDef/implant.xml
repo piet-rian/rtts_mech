@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: twinkles of stars(basic) -->
+  <RTTS_BandwidthImplant_Basic.label>ほしのきらめき(基礎)</RTTS_BandwidthImplant_Basic.label>
+  <!-- EN: A neural implant which gives a mechanitor an additional bandwidth (+3).\n\n\n      This
+  basic-tier implant can only increase the bandwidth up to 9.\n      To go higher, a higher-tier implant
+  implant must be used.\n\n\n      It can be self-installed without surgery.\n\n\n      This implant can be
+  installed up to 3 times to increase its effect. -->
+  <RTTS_BandwidthImplant_Basic.description>メカニターに追加の帯域幅（+3）を与える神経インプラント。\n\n\nこの基礎ティアのインプラントは、帯域幅を最大9までしか増やせません。\nより高い値にするには、より高いティアのインプラントが必要です。\n\n\n手術なしで自己装着可能です。\n\n\nこのインプラントは最大3回まで装着して効果を高めることができます。</RTTS_BandwidthImplant_Basic.description>
+  <!-- EN: Implant {0_label} -->
+  <RTTS_BandwidthImplant_Basic.comps.CompUsableImplant.useLabel>インプラント {0_label}</RTTS_BandwidthImplant_Basic.comps.CompUsableImplant.useLabel>
+
+  <!-- EN: twinkles of stars(high) -->
+  <RTTS_BandwidthImplant_High.label>ほしのきらめき(高度)</RTTS_BandwidthImplant_High.label>
+  <!-- EN: A neural implant which gives a mechanitor an additional bandwidth (+3).\n\n\n      This
+  high-tier implant can increase the bandwidth up to 27.\n\n\n      It can be self-installed without
+  surgery.\n\n\n      This implant can be installed up to 3 times to increase its effect. -->
+  <RTTS_BandwidthImplant_High.description>メカニターに追加の帯域幅（+3）を与える神経インプラント。\n\n\nこの高度ティアのインプラントは、帯域幅を最大27まで増やすことができます。\n\n\n手術なしで自己装着可能です。\n\n\nこのインプラントは最大3回まで装着して効果を高めることができます。</RTTS_BandwidthImplant_High.description>
+  <!-- EN: Implant {0_label} -->
+  <RTTS_BandwidthImplant_High.comps.CompUsableImplant.useLabel>インプラント {0_label}</RTTS_BandwidthImplant_High.comps.CompUsableImplant.useLabel>
+
+  <!-- EN: twinkles of stars(standard) -->
+  <RTTS_BandwidthImplant_Standard.label>ほしのきらめき(標準)</RTTS_BandwidthImplant_Standard.label>
+  <!-- EN: A neural implant which gives a mechanitor an additional bandwidth (+3).\n\n\n      This
+  standard-tier implant can increase the bandwidth up to 18.\n\n\n      It can be self-installed without
+  surgery.\n\n\n      This implant can be installed up to 3 times to increase its effect. -->
+  <RTTS_BandwidthImplant_Standard.description>メカニターに追加の帯域幅（+3）を与える神経インプラント。\n\n\nこの標準ティアのインプラントは、帯域幅を最大18まで増やすことができます。\n\n\n手術なしで自己装着可能です。\n\n\nこのインプラントは最大3回まで装着して効果を高めることができます。</RTTS_BandwidthImplant_Standard.description>
+  <!-- EN: Implant {0_label} -->
+  <RTTS_BandwidthImplant_Standard.comps.CompUsableImplant.useLabel>インプラント {0_label}</RTTS_BandwidthImplant_Standard.comps.CompUsableImplant.useLabel>
+
+  <!-- EN: twinkles of stars(ultra) -->
+  <RTTS_BandwidthImplant_Ultra.label>ほしのきらめき(超高度)</RTTS_BandwidthImplant_Ultra.label>
+  <!-- EN: A neural implant which gives a mechanitor an additional bandwidth (+3).\n\n\n      This
+  ultra-tier implant can increase the bandwidth up to 36.\n\n\n      It can be self-installed without
+  surgery.\n\n\n      This implant can be installed up to 3 times to increase its effect. -->
+  <RTTS_BandwidthImplant_Ultra.description>メカニターに追加の帯域幅（+3）を与える神経インプラント。\n\n\nこの超高度ティアのインプラントは、帯域幅を最大36まで増やすことができます。\n\n\n手術なしで自己装着可能です。\n\n\nこのインプラントは最大3回まで装着して効果を高めることができます。</RTTS_BandwidthImplant_Ultra.description>
+  <!-- EN: Implant {0_label} -->
+  <RTTS_BandwidthImplant_Ultra.comps.CompUsableImplant.useLabel>インプラント {0_label}</RTTS_BandwidthImplant_Ultra.comps.CompUsableImplant.useLabel>
+
+</LanguageData>

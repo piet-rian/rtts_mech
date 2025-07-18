@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: twinkles of stars -->
+  <RTTS_BandwidthImplantHediff.label>ほしのきらめき</RTTS_BandwidthImplantHediff.label>
+  <!-- EN: An implant which increases a mechanitor's bandwidths.\n\n\n      This implant can be installed up to 12 times to increase its effect. -->
+  <RTTS_BandwidthImplantHediff.description>メカニターの帯域幅を増加させるインプラントです.\n\nこのインプラントは最大12回までインストールして効果を増加できます.</RTTS_BandwidthImplantHediff.description>
+
+</LanguageData>
