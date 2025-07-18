@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- コントロールサブリンクの定義を元にする -->
+
+  <HediffDef>
+    <defName>RTTS_BandwidthSublinkImplant</defName>
+    <hediffClass>Hediff_Level</hediffClass>
+    <descriptionHyperlinks>
+      <ThingDef>
+        <!-- TODO -->
+      </ThingDef>
+    </descriptionHyperlinks>
+
+    <label>twinkles of stars</label>
+    <description>An implant which increases a mechanitor's bandwidths.\n\n
+      This implant can be installed up to 12 times to increase its effect.</description>
+
+    <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <priceImpact>true</priceImpact>
+
+    <initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+    <minSeverity>0</minSeverity>
+    <maxSeverity>12</maxSeverity>
+
+    <keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+    <levelIsQuantity>true</levelIsQuantity>
+    <duplicationAllowed>false</duplicationAllowed>
+
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statOffsets>
+          <MechBandwidth>3</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statOffsets>
+          <MechBandwidth>6</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statOffsets>
+          <MechBandwidth>9</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statOffsets>
+          <MechBandwidth>12</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
+        <statOffsets>
+          <MechBandwidth>15</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>6</minSeverity>
+        <statOffsets>
+          <MechBandwidth>18</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>7</minSeverity>
+        <statOffsets>
+          <MechBandwidth>21</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>8</minSeverity>
+        <statOffsets>
+          <MechBandwidth>24</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>9</minSeverity>
+        <statOffsets>
+          <MechBandwidth>27</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>10</minSeverity>
+        <statOffsets>
+          <MechBandwidth>30</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>11</minSeverity>
+        <statOffsets>
+          <MechBandwidth>33</MechBandwidth>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>12</minSeverity>
+        <statOffsets>
+          <MechBandwidth>36</MechBandwidth>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>
