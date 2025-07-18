@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: starry mech recharger -->
+  <RTTS_Mech_Charger.label>星空の寝床</RTTS_Mech_Charger.label>
+  <!-- EN: All kinds of mechanoids can recharge here. During recharge, this recharger produces\n      toxic wastepacks and stores them internally. Haulers must remove the wastepacks from time to\n      time. -->
+  <RTTS_Mech_Charger.description>メカノイドのサイズに関わらず充電可能な汎用充電器です。</RTTS_Mech_Charger.description>
+
+</LanguageData>
