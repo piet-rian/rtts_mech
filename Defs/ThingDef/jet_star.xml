@@ -53,22 +53,6 @@
       </mechWorkTypePriorities>
     </race>
 
-    <comps>
-      <li Class="CompProperties_ProjectileInterceptor">
-        <radius>1.0</radius>
-        <interceptGroundProjectiles>true</interceptGroundProjectiles>
-        <color>(0.4, 0.4, 0.4)</color>
-        <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
-        <activeSound>BulletShield_Ambience</activeSound>
-        <hitPoints>100</hitPoints>
-        <hitPointsRestoreInstantlyAfterCharge>true</hitPointsRestoreInstantlyAfterCharge>
-        <chargeDurationTicks>300</chargeDurationTicks><!-- 5s -->
-        <drawWithNoSelection>True</drawWithNoSelection>
-        <disarmedByEmpForTicks>500</disarmedByEmpForTicks>
-        <gizmoTipKey>ProjectileInterceptorTip</gizmoTipKey>
-      </li>
-    </comps>
-
     <!-- 装備なし近接攻撃時の内容定義 -->
     <tools>
       <li>
