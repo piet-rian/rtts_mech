@@ -3,12 +3,13 @@
   <!-- コントロールサブリンクの定義を元にする -->
 
   <HediffDef>
-    <defName>RTTS_BandwidthSublinkImplant</defName>
+    <defName>RTTS_BandwidthSublinkImplantHediff</defName>
     <hediffClass>Hediff_Level</hediffClass>
     <descriptionHyperlinks>
-      <ThingDef>
-        <!-- TODO -->
-      </ThingDef>
+      <ThingDef>RTTS_BandwidthSublinkImplant_Basic</ThingDef>
+      <ThingDef>RTTS_BandwidthSublinkImplant_Standard</ThingDef>
+      <ThingDef>RTTS_BandwidthSublinkImplant_High</ThingDef>
+      <ThingDef>RTTS_BandwidthSublinkImplant_Ultra</ThingDef>
     </descriptionHyperlinks>
 
     <label>twinkles of stars</label>
