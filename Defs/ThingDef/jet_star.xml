@@ -14,7 +14,7 @@
       \n\n&lt;color=#808080&gt;EnabledWork: Firefighter, BasicWorker, Hauling&lt;/color&gt;</description>
 
     <statBases>
-      <MarketValue>5000</MarketValue> <!-- 市場価値 -->
+      <MarketValue>7000</MarketValue> <!-- 市場価値 -->
       <MoveSpeed>8.00</MoveSpeed> <!-- 移動速度, 8.0を超えると経路計算的な負荷が上がるという話を何処かで見聞きしている -->
 
       <!-- ダメージ種別ごとの軽減率 -->
