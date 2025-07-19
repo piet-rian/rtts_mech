@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- ===== allow tool の とどめをメカでも実行可能にする ===== -->
+
+  <!-- とどめ -->
+  <!-- 要素追加対象であるxPathに要素がないことが自明なため -->
+  <Operation MayRequire="UnlimitedHugs.AllowTool" Class="PatchOperationAdd">
+    <xpath>/Defs/WorkGiverDef[defName="FinishOff"]</xpath>
+    <value>
+      <canBeDoneByMechs>true</canBeDoneByMechs>
+    </value>
+  </Operation>
+</Patch>
