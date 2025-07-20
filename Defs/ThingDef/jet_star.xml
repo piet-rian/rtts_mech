@@ -49,6 +49,7 @@
       <!-- 優先順位 -->
       <mechWorkTypePriorities>
         <Firefighter>1</Firefighter>
+        <FinishingOff MayRequire="UnlimitedHugs.AllowTool">1</FinishingOff>
         <BasicWorker>1</BasicWorker>
         <Hauling>4</Hauling>
       </mechWorkTypePriorities>
