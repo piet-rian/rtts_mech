@@ -42,6 +42,7 @@
       <mechEnabledWorkTypes>
         <li>Firefighter</li><!-- 消火 -->
         <li MayRequire="UnlimitedHugs.AllowTool">FinishingOff</li> <!-- とどめを刺す(Allow Tool) -->
+        <li MayRequire="keyz182.KeyzAllowUtilities">KAU_FinishingOff</li> <!-- とどめを刺す(Allow Tool) -->
         <li>BasicWorker</li><!-- 雑用 -->
         <li>Hauling</li> <!-- 運搬 -->
       </mechEnabledWorkTypes>
@@ -50,6 +51,7 @@
       <mechWorkTypePriorities>
         <Firefighter>1</Firefighter>
         <FinishingOff MayRequire="UnlimitedHugs.AllowTool">1</FinishingOff>
+        <KAU_FinishingOff MayRequire="keyz182.KeyzAllowUtilities">1</KAU_FinishingOff>
         <BasicWorker>1</BasicWorker>
         <Hauling>4</Hauling>
       </mechWorkTypePriorities>
