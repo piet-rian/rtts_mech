@@ -4,7 +4,9 @@
 
 - [AF · Mech Fox](https://steamcommunity.com/sharedfiles/filedetails/?id=3015998297)
 - [Hover Hauler](https://steamcommunity.com/sharedfiles/filedetails/?id=3209529782)
-  - 両者のXMLを全面的に参考にした
+- [Bandwidth Enhancer](https://steamcommunity.com/sharedfiles/filedetails/?id=2888505789)
+- [Universal Mech Charger](https://steamcommunity.com/sharedfiles/filedetails/?id=3330287994)
+  - 着想およびXMLの参考元
 
 ## Third Party License
 
