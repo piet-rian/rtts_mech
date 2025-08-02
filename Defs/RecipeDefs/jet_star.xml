@@ -13,7 +13,7 @@
 
     <!-- 前提研究 -->
     <researchPrerequisites>
-      <li>StandardMechtech</li>
+      <li>HighMechtech</li>
       <li>RTTS_RESEARCH_PROJECT_1T</li> <!-- RTTS側の前提研究も必要とする -->
     </researchPrerequisites>
     <mechanitorOnlyRecipe>true</mechanitorOnlyRecipe> <!-- メカニターのみが使用可能なレシピ -->

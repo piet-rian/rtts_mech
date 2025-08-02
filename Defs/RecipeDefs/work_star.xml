@@ -5,7 +5,7 @@
   <RecipeDef Abstract="True" Name="RTTS_Mech_Recipe_WorkableStar">
     <!-- 前提研究 -->
     <researchPrerequisites>
-      <li>BasicMechtech</li>
+      <li>StandardMechtech</li>
       <li>RTTS_RESEARCH_PROJECT_1T</li> <!-- RTTS側の前提研究も必要とする -->
     </researchPrerequisites>
 
