@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ドローンとして定義 -->
+  <PawnKindDef ParentName="BaseDroneKind">
+    <defName>RTTS_Mech_children</defName>
+    <label>TODO</label>
+    <labelPlural>TODO</labelPlural>
+    <race>RTTS_Mech_children</race>
+    <defaultFactionType>PlayerColony</defaultFactionType> <!-- Player Only -->
+    <combatPower>75</combatPower>
+    <canOpenDoors>true</canOpenDoors>
+    <canOpenAnyDoor>true</canOpenAnyDoor>
+
+    <!-- ライフステージごとの指定 -->
+    <lifeStages>
+      <li>
+        <bodyGraphicData> <!-- メカノイド(生体?)のグラフィック定義 -->
+          <texPath>Races/Children/New</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+</Defs>

@@ -49,7 +49,7 @@
     </tools>
     <comps>
       <li Class="CompProperties_MechCarrier">
-        <spawnPawnKind>Drone_Wasp</spawnPawnKind> <!-- お試しでドローンがでてくるようにした -->
+        <spawnPawnKind>RTTS_Mech_children</spawnPawnKind> <!-- 小型ジェットスター的なやつを生成する -->
         <fixedIngredient>Steel</fixedIngredient>
         <costPerPawn>10</costPerPawn>
         <cooldownTicks>60</cooldownTicks> <!-- 再生成のクールダウン, ILSpyで構造見る限りpubulicで変更可能だった -->
