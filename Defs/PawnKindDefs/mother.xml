@@ -4,8 +4,8 @@
   <!-- Warqueen のXMLほぼそのまま -->
   <PawnKindDef Name="MechWarqueenKind" ParentName="HeavyMechanoidKind">
     <defName>RTTS_Mech_Mother</defName>
-    <label>TODO</label>
-    <labelPlural>TODO</labelPlural>
+    <label>Dreaming Night</label>
+    <labelPlural>Dreaming Night</labelPlural>
     <race>RTTS_Mech_Mother</race>
     <defaultFactionType>PlayerColony</defaultFactionType> <!-- Player Only -->
     <combatPower>600</combatPower>

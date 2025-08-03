@@ -4,9 +4,10 @@
   <!-- Warqueen のXMLほぼそのまま -->
   <ThingDef Name="RTTS_Mech_MotherWarqueen" ParentName="SuperHeavyMechanoid">
     <defName>RTTS_Mech_Mother</defName>
-    <label>TODO</label>
-    <description>TODO</description>
+    <label>Dreaming Night</label>
+    <description>A mechanoid for generating Bit Stars.\nIts slow movement and lack of combat ability require careful placement.</description>
     <statBases>
+      <MarketValue>15000</MarketValue> <!-- 市場価値 -->
       <MoveSpeed>0.9</MoveSpeed>
       <EnergyShieldRechargeRate>0.5</EnergyShieldRechargeRate>
       <EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>

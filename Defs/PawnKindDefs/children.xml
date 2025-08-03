@@ -4,8 +4,8 @@
   <!-- ドローンとして定義 -->
   <PawnKindDef ParentName="BaseDroneKind">
     <defName>RTTS_Mech_children</defName>
-    <label>TODO</label>
-    <labelPlural>TODO</labelPlural>
+    <label>Bit star</label>
+    <labelPlural>Bit star</labelPlural>
     <race>RTTS_Mech_children</race>
     <defaultFactionType>PlayerColony</defaultFactionType> <!-- Player Only -->
     <combatPower>75</combatPower>
