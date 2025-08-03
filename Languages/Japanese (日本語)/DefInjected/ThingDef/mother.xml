@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: Dreaming Night -->
+  <RTTS_Mech_Mother.label>ドリーミングナイト</RTTS_Mech_Mother.label>
+  <!-- EN: A mechanoid for generating Bit Stars.\n      Its slow movement and lack of combat ability require careful placement. -->
+  <RTTS_Mech_Mother.description>ビットスターを生成するためのメカノイド。足は遅く戦闘能力もないため配置に注意。</RTTS_Mech_Mother.description>
+  <!-- EN: head -->
+  <RTTS_Mech_Mother.tools.head.label>ふわふわヘッド</RTTS_Mech_Mother.tools.head.label>
+
+</LanguageData>
