@@ -12,8 +12,8 @@
     </statBases>
     <race>
       <body>RTTS_Mech_Body_WorkableStar</body> <!-- `BodyDef_star.xml` で定義されているボディ -->
-      <thinkTreeConstant>HunterDroneConstant</thinkTreeConstant> <!-- TODO: 暫定でハンタードローンと同じ挙動 -->
-      <baseHealthScale>0.70</baseHealthScale>
+      <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant> <!-- ウォーアーチンと同じ挙動 -->
+      <baseHealthScale>0.35</baseHealthScale>
       <baseBodySize>0.7</baseBodySize>
       <hasCorpse>false</hasCorpse> <!-- falseにすると死体処理が必要なくなる -->
       <lifeStageAges>
