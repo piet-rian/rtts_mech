@@ -24,6 +24,10 @@
 
 - <https://www.flaticon.com/free-icon/night_13113247>
 
+### チャイルド
+
+- <https://www.flaticon.com/free-icon/star_3212666>
+
 ### 充電器
 
 - <https://www.flaticon.com/free-icon/clear-night_13883351>
@@ -34,8 +38,4 @@
 
 ### 今後使うかもしれないのでとりあえずでメモしてあるもの
 
-<https://www.flaticon.com/free-icon/star_3212666>
-
 <https://www.flaticon.com/free-icon/star_9278536>
-
-<https://www.flaticon.com/free-icon/nebula_8357874>
