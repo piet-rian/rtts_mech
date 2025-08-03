@@ -52,8 +52,8 @@
         <spawnPawnKind>RTTS_Mech_children</spawnPawnKind> <!-- 小型ジェットスター的なやつを生成する -->
         <fixedIngredient>Steel</fixedIngredient>
         <costPerPawn>10</costPerPawn>
-        <cooldownTicks>60</cooldownTicks> <!-- 再生成のクールダウン, ILSpyで構造見る限りpubulicで変更可能だった -->
-        <maxPawnsToSpawn>10</maxPawnsToSpawn> <!-- 一度の生成数, 同上 -->
+        <cooldownTicks>6000</cooldownTicks> <!-- 再生成のクールダウン, ILSpyで構造見る限りpubulicで変更可能だった -->
+        <maxPawnsToSpawn>30</maxPawnsToSpawn> <!-- 一度の生成数, 同上 -->
         <startingIngredientCount>1000</startingIngredientCount>
         <maxIngredientCount>1000</maxIngredientCount>
         <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
