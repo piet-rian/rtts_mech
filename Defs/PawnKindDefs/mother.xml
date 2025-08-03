@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Warqueen のXMLほぼそのまま -->
+  <PawnKindDef Name="MechWarqueenKind" ParentName="HeavyMechanoidKind">
+    <defName>RTTS_Mech_Mother</defName>
+    <label>TODO</label>
+    <labelPlural>TODO</labelPlural>
+    <race>RTTS_Mech_Mother</race>
+    <defaultFactionType>PlayerColony</defaultFactionType> <!-- Player Only -->
+    <combatPower>600</combatPower>
+    <maxPerGroup>3</maxPerGroup>
+    <allowInMechClusters>false</allowInMechClusters>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Races/Mother/New</texPath>
+          <maskPath>Races/Mother/Mask</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Races/Mother/Old</texPath>
+          <maskPath>Races/Mother/Mask</maskPath>
+          <shaderType>CutoutWithOverlay</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3</drawSize>
+          <shadowData>
+            <volume>(0.7, 0.8, 0.7)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <controlGroupPortraitZoom>0.7</controlGroupPortraitZoom>
+  </PawnKindDef>
+
+</Defs>

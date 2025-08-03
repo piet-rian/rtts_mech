@@ -20,6 +20,10 @@
 
 - <https://www.flaticon.com/free-icon/star_3640329>
 
+### マザー
+
+- <https://www.flaticon.com/free-icon/night_13113247>
+
 ### 充電器
 
 - <https://www.flaticon.com/free-icon/clear-night_13883351>
@@ -27,3 +31,11 @@
 ### 効果音
 
 - <https://145.rei-yumesaki.net/article/427522280.html>
+
+### 今後使うかもしれないのでとりあえずでメモしてあるもの
+
+<https://www.flaticon.com/free-icon/star_3212666>
+
+<https://www.flaticon.com/free-icon/star_9278536>
+
+<https://www.flaticon.com/free-icon/nebula_8357874>
