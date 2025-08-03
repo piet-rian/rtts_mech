@@ -21,7 +21,6 @@
         <li>Mining</li> <!-- 採掘 -->
         <li>PlantCutting</li> <!-- 採集伐採 -->
         <li>Growing</li> <!-- 栽培 -->
-        <li>Cooking</li> <!-- 料理 -->
         <li>Hauling</li> <!-- 運搬 -->
         <li>Cleaning</li> <!-- 清掃 -->
       </mechEnabledWorkTypes>
@@ -32,7 +31,6 @@
         <Firefighter>1</Firefighter>
         <PlantCutting>1</PlantCutting>
         <Growing>2</Growing>
-        <Cooking>3</Cooking>
         <Mining>3</Mining>
         <Construction>4</Construction>
         <Hauling>4</Hauling>
