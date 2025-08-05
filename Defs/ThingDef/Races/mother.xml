@@ -13,6 +13,7 @@
       <EnergyShieldEnergyMax>3</EnergyShieldEnergyMax>
       <MeleeDoorDamageFactor>1.5</MeleeDoorDamageFactor>
       <EMPResistance>0.7</EMPResistance>
+      <BandwidthCost>9</BandwidthCost> <!-- 要求帯域幅 -->
     </statBases>
     <race>
       <body>Mech_Warqueen</body>

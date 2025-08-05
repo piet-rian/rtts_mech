@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ==== 培養時のレシピ ==== -->
+  <RecipeDef Abstract="True" Name="RTTS_Mech_Recipe_Mother">
+    <description>Gestate a Dreaming Night</description>
+    <jobString>Gestating Dreaming Night.</jobString>
+
+    <!-- 説明文からリンクされる対象 -->
+    <descriptionHyperlinks>
+      <ThingDef>RTTS_Mech_Mother</ThingDef> <!-- 培養されるメカノイドを指定してある -->
+    </descriptionHyperlinks>
+
+    <!-- 前提研究 -->
+    <researchPrerequisites>
+      <li>UltraMechtech</li>
+      <li>RTTS_RESEARCH_PROJECT_1T</li> <!-- RTTS側の前提研究も必要とする -->
+    </researchPrerequisites>
+    <mechanitorOnlyRecipe>true</mechanitorOnlyRecipe> <!-- メカニターのみが使用可能なレシピ -->
+    <workSpeedStat>MechFormingSpeed</workSpeedStat> <!-- 作業速度のステータス -->
+    <soundWorking>MechGestatorCycle_Initiating</soundWorking> <!-- 培養開始時の音 -->
+
+    <!-- レシピの使用者(作業台) -->
+    <recipeUsers>
+      <li>LargeMechGestator</li>
+    </recipeUsers>
+
+    <!-- 成果物(本レシピの場合は培養されるメカノイド) -->
+    <products>
+      <RTTS_Mech_Mother>1</RTTS_Mech_Mother>
+    </products>
+  </RecipeDef>
+
+  <!-- 通常培養レシピ(要求材料少なめ、時間長め) -->
+  <RecipeDef ParentName="RTTS_Mech_Recipe_Mother">
+    <defName>RTTS_Mech_Recipe_Mother_normal</defName>
+    <label>gestate Dreaming Night</label>
+    <description>Gestate a Dreaming Night.</description>
+    <jobString>Gestating Dreaming Night.</jobString>
+
+    <workAmount>1800</workAmount> <!-- 培養開始時の作業量 -->
+    <gestationCycles>9</gestationCycles> <!-- 培養サイクル数, x9 なのでトータル27日ぐらい -->
+    <formingTicks>180000</formingTicks> <!-- 培養サイクル一回あたりの時間, 3日 -->
+
+    <!-- 素材 -->
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RTTS_STAR_PIECE</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>1000</count>
+      </li>
+    </ingredients>
+  </RecipeDef>
+
+</Defs>
