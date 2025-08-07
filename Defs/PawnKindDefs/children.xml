@@ -2,15 +2,14 @@
 <Defs>
 
   <!-- ドローンとして定義 -->
-  <PawnKindDef ParentName="BaseDroneKind">
+  <PawnKindDef ParentName="LightMechanoidKind">
     <defName>RTTS_Mech_children</defName>
     <label>Bit star</label>
     <labelPlural>Bit star</labelPlural>
     <race>RTTS_Mech_children</race>
     <defaultFactionType>PlayerColony</defaultFactionType> <!-- Player Only -->
-    <combatPower>75</combatPower>
-    <canOpenDoors>true</canOpenDoors>
-    <canOpenAnyDoor>true</canOpenAnyDoor>
+    <allowInMechClusters>false</allowInMechClusters>
+    <forceNoDeathNotification>true</forceNoDeathNotification> <!-- 死亡時通知を抑制 -->
 
     <!-- ライフステージごとの指定 -->
     <lifeStages>
@@ -21,6 +20,9 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
+    <weaponTags>
+      <li>MechanoidGunSpiner</li>
+    </weaponTags>
   </PawnKindDef>
 
 </Defs>
