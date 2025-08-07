@@ -20,7 +20,7 @@
           <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
         </li>
       </lifeStageAges>
-      <!-- TODO: ボディをワークスターと同じに戻しても射撃できるなら戻す、だめな場合は再考 <body>RTTS_Mech_Body_WorkableStar</body> -->
+      <body>RTTS_Mech_Body_WorkableStar</body> <!-- ボディだけ星系統に戻して射撃ができることは確認済み -->
       <thinkTreeConstant>WarUrchinConstant</thinkTreeConstant>
       <baseHealthScale>0.35</baseHealthScale>
       <baseBodySize>0.7</baseBodySize>
