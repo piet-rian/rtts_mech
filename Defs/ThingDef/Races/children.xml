@@ -15,9 +15,9 @@
         <li>
           <def>MechanoidFullyFormed</def>
           <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_WarUrchin_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_WarUrchin_Death</soundDeath>
-          <soundCall>Pawn_Mech_WarUrchin_Call</soundCall>
+          <soundCall>Pawn_Mech_WorkStar_Call</soundCall>
+          <soundWounded>Pawn_Mech_WorkStar_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Militor_Death</soundDeath>
         </li>
       </lifeStageAges>
       <body>RTTS_Mech_Body_WorkableStar</body> <!-- ボディだけ星系統に戻して射撃ができることは確認済み -->
