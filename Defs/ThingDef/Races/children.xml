@@ -9,7 +9,6 @@
       Jet Star.\nAutomatically disappears after operating for a set time.</description>
     <statBases>
       <MoveSpeed>12.0</MoveSpeed>
-      <!-- TODO: ドローンベース側の体定義側に浮力の原動力があると予想されるため <MaxFlightTime>6000</MaxFlightTime> -->
     </statBases>
     <race>
       <lifeStageAges>
