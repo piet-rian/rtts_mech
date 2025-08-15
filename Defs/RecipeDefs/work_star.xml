@@ -20,18 +20,6 @@
     <recipeUsers>
       <li>MechGestator</li>
     </recipeUsers>
-
-    <!-- 素材 -->
-    <ingredients Inherit="False">
-      <li>
-        <filter>
-          <thingDefs>
-            <li>RTTS_STAR_PIECE</li>
-          </thingDefs>
-        </filter>
-        <count>50</count>
-      </li>
-    </ingredients>
   </RecipeDef>
 
   <!-- 実レシピ：ワークスター -->
@@ -46,10 +34,59 @@
       <ThingDef>RTTS_Mech_work_star_instance</ThingDef> <!-- 培養されるメカノイドを指定してある -->
     </descriptionHyperlinks>
 
+    <!-- 素材 -->
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RTTS_STAR_PIECE</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+
     <!-- 成果物(本レシピの場合は培養されるメカノイド) -->
     <products>
       <RTTS_Mech_work_star_instance>1</RTTS_Mech_work_star_instance>
     </products>
+  </RecipeDef>
+
+  <!-- 実レシピ：masterワークスター -->
+  <RecipeDef ParentName="RTTS_Mech_Recipe_WorkableStar">
+    <defName>RTTS_Mech_Recipe_work_master</defName>
+    <label>gestate Master Work Star</label>
+    <description>Gestate a Master Work Star</description>
+    <jobString>Gestating Master Work Star.</jobString>
+
+    <!-- 説明文からリンクされる対象 -->
+    <descriptionHyperlinks>
+      <ThingDef>RTTS_Mech_work_star_master</ThingDef> <!-- 培養されるメカノイドを指定してある -->
+    </descriptionHyperlinks>
+
+    <!-- 素材 -->
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RTTS_STAR_PIECE</li>
+          </thingDefs>
+        </filter>
+        <count>500</count>
+      </li>
+    </ingredients>
+
+    <!-- 成果物(本レシピの場合は培養されるメカノイド) -->
+    <products>
+      <RTTS_Mech_work_star_master>1</RTTS_Mech_work_star_master>
+    </products>
+
+
+    <!-- 前提研究(上書き) -->
+    <researchPrerequisites Inherit="False">
+      <li>HighMechtech</li>
+      <li>RTTS_RESEARCH_PROJECT_1T</li> <!-- RTTS側の前提研究も必要とする -->
+    </researchPrerequisites>
   </RecipeDef>
 
 </Defs>

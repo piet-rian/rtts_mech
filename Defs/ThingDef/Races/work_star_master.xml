@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ワークスター : 汎用作業用メカノイド -->
+
+  <ThingDef ParentName="RTTS_Mech_work_star">
+    <defName>RTTS_Mech_work_star_master</defName>
+    <label>master work star</label>
+
+    <statBases>
+      <BandwidthCost>6</BandwidthCost> <!-- 要求帯域幅 -->
+    </statBases>
+
+    <!-- memo.
+      description においてはカラータグ `<color=#FF0000>xxx</color>` で色を変えられる
+      ただし、 <> は &lt; &gt; に直す必要あり
+    -->
+    <description>Mechanoid for meny operations.</description>
+
+    <!-- 種族定義 -->
+    <race>
+      <!-- 実施可能な作業の定義 -->
+      <mechEnabledWorkTypes>
+        <li>Firefighter</li><!-- 消火 -->
+        <li>Construction</li> <!-- 建設・解体 -->
+        <li>Mining</li> <!-- 採掘 -->
+        <li>PlantCutting</li> <!-- 採集伐採 -->
+        <li>Growing</li> <!-- 栽培 -->
+        <li>Hauling</li> <!-- 運搬 -->
+        <li>Cleaning</li> <!-- 清掃 -->
+      </mechEnabledWorkTypes>
+
+      <!-- 優先順位 -->
+      <!-- 大まかな方針としては 農作業系 > 料理 > 採掘 > 建設 > 運搬・掃除 -->
+      <mechWorkTypePriorities>
+        <Firefighter>1</Firefighter>
+        <PlantCutting>1</PlantCutting>
+        <Growing>2</Growing>
+        <Mining>3</Mining>
+        <Construction>4</Construction>
+        <Hauling>4</Hauling>
+        <Cleaning>4</Cleaning>
+      </mechWorkTypePriorities>
+
+      <!-- メカのスキルレベル -->
+      <mechFixedSkillLevel>16</mechFixedSkillLevel>
+    </race>
+
+    <!-- レシピとか研究欄とかで表示されるアイコンとその拡大スケール -->
+    <uiIconPath>UI/BetaStar</uiIconPath>
+    <uiIconScale>1</uiIconScale>
+
+  </ThingDef>
+
+</Defs>
