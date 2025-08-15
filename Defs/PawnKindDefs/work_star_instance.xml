@@ -21,19 +21,6 @@
           <drawSize>0.8</drawSize>
         </corpseGraphicData>
       </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Races/Gamma/Old</texPath>
-          <maskPath>Races/Gamma/Mask</maskPath>
-          <shaderType>CutoutWithOverlay</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>0.8</drawSize>
-        </bodyGraphicData>
-        <corpseGraphicData>
-          <texPath>Races/Gamma/DeathOld</texPath>
-          <drawSize>0.8</drawSize>
-        </corpseGraphicData>
-      </li>
     </lifeStages>
   </PawnKindDef>
 

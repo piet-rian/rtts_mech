@@ -25,19 +25,6 @@
           <drawSize>1.2</drawSize>
         </corpseGraphicData>
       </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Races/JetStar/Old</texPath>
-          <maskPath>Races/JetStar/Mask</maskPath>
-          <shaderType>CutoutWithOverlay</shaderType>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.2</drawSize>
-        </bodyGraphicData>
-        <corpseGraphicData>
-          <texPath>Races/JetStar/DeathOld</texPath>
-          <drawSize>1.2</drawSize>
-        </corpseGraphicData>
-      </li>
     </lifeStages>
 
     <!-- メカノイドが使用可能なアビリティの定義 -->

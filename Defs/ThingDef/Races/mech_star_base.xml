@@ -57,13 +57,6 @@
           <soundWounded>Pawn_Mech_WorkStar_Wounded</soundWounded>
           <soundDeath>Pawn_Mech_Militor_Death</soundDeath>
         </li>
-        <li>
-          <def>MechanoidFullyFormed</def>
-          <minAge>100</minAge>
-          <soundCall>Pawn_Mech_WorkStar_Call</soundCall>
-          <soundWounded>Pawn_Mech_WorkStar_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Militor_Death</soundDeath>
-        </li>
       </lifeStageAges>
     </race>
 
