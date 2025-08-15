@@ -20,11 +20,10 @@
     <race>
       <!-- 実施可能な作業の定義 -->
       <mechEnabledWorkTypes>
-        <li>Firefighter</li><!-- 消火 -->
         <li>Construction</li> <!-- 建設・解体 -->
-        <li>Mining</li> <!-- 採掘 -->
-        <li>PlantCutting</li> <!-- 採集伐採 -->
-        <li>Growing</li> <!-- 栽培 -->
+        <li>Smithing</li> <!-- 鍛冶 -->
+        <li>Tailoring</li> <!-- 裁縫 -->
+        <li>Crafting</li> <!-- 工芸 -->
         <li>Hauling</li> <!-- 運搬 -->
         <li>Cleaning</li> <!-- 清掃 -->
       </mechEnabledWorkTypes>
@@ -32,11 +31,10 @@
       <!-- 優先順位 -->
       <!-- 大まかな方針としては 農作業系 > 料理 > 採掘 > 建設 > 運搬・掃除 -->
       <mechWorkTypePriorities>
-        <Firefighter>1</Firefighter>
-        <PlantCutting>1</PlantCutting>
-        <Growing>2</Growing>
-        <Mining>3</Mining>
-        <Construction>4</Construction>
+        <Construction>1</Construction>
+        <Smithing>2</Smithing>
+        <Tailoring>2</Tailoring>
+        <Crafting>3</Crafting>
         <Hauling>4</Hauling>
         <Cleaning>4</Cleaning>
       </mechWorkTypePriorities>
