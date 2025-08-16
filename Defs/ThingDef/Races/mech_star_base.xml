@@ -60,6 +60,36 @@
       </lifeStageAges>
     </race>
 
+    <!-- 装備なし近接攻撃時の内容定義(ジェットスターと同等の近接攻撃能力を共通でもたせる) -->
+    <tools>
+      <li>
+        <!-- 攻撃用パーツ キラキラ(emp) -->
+        <label>twinkle</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>0.1</cooldownTime>
+        <armorPenetration>0.99</armorPenetration>
+        <chanceFactor>1.0</chanceFactor>
+        <extraMeleeDamages>
+          <li>
+            <!-- 多分これでEMPグレネードと同じぐらいの強度のはず -->
+            <def>EMP</def>
+            <amount>50</amount>
+          </li>
+          <li>
+            <!-- 無力化という意味で凍傷が強い気がするのでお試しで -->
+            <def>Frostbite</def>
+            <amount>7</amount>
+          </li>
+        </extraMeleeDamages>
+        <!-- 体のどこのパーツ群で殴っている扱いにしているのか -->
+        <linkedBodyPartsGroup>RTTS_TwinkleAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+
     <comps>
       <li Class="CompProperties_CanBeDormant" /> <!-- 休眠可能, メカクラ等での登場時に寝れるかみたいな設定？ -->
       <li Class="CompProperties_MechRepairable" /> <!-- 修理可能, メカニターが修理できるかどうかの設定？ -->

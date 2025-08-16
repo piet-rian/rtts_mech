@@ -74,36 +74,6 @@
       </li>
     </comps>
 
-    <!-- 装備なし近接攻撃時の内容定義 -->
-    <tools>
-      <li>
-        <!-- 攻撃用パーツ キラキラ(emp) -->
-        <label>twinkle</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>2</power>
-        <cooldownTime>0.1</cooldownTime>
-        <armorPenetration>0.99</armorPenetration>
-        <chanceFactor>1.0</chanceFactor>
-        <extraMeleeDamages>
-          <li>
-            <!-- 多分これでEMPグレネードと同じぐらいの強度のはず -->
-            <def>EMP</def>
-            <amount>50</amount>
-          </li>
-          <li>
-            <!-- 無力化という意味で凍傷が強い気がするのでお試しで -->
-            <def>Frostbite</def>
-            <amount>7</amount>
-          </li>
-        </extraMeleeDamages>
-        <!-- 体のどこのパーツ群で殴っている扱いにしているのか -->
-        <linkedBodyPartsGroup>RTTS_TwinkleAttackTool</linkedBodyPartsGroup>
-        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
-      </li>
-    </tools>
-
     <!-- ダメージ種別ごとの軽減率 -->
     <damageMultipliers>
       <li>
