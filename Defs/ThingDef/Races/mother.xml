@@ -5,7 +5,8 @@
   <ThingDef Name="RTTS_Mech_MotherWarqueen" ParentName="SuperHeavyMechanoid">
     <defName>RTTS_Mech_Mother</defName>
     <label>Dreaming Night</label>
-    <description>A mechanoid for generating Bit Stars.\nIts slow movement and lack of combat ability require careful placement.</description>
+    <description>A mechanoid for generating Bit Stars.\nIts slow movement and lack of combat ability
+      require careful placement.</description>
     <statBases>
       <MarketValue>15000</MarketValue> <!-- 市場価値 -->
       <MoveSpeed>0.9</MoveSpeed>
@@ -52,11 +53,11 @@
     <comps>
       <li Class="CompProperties_MechCarrier">
         <spawnPawnKind>RTTS_Mech_children</spawnPawnKind> <!-- 小型ジェットスター的なやつを生成する -->
-        <fixedIngredient>Steel</fixedIngredient>
-        <costPerPawn>10</costPerPawn>
+        <fixedIngredient>RTTS_STAR_PIECE</fixedIngredient>
+        <costPerPawn>50</costPerPawn>
         <cooldownTicks>6000</cooldownTicks> <!-- 再生成のクールダウン, ILSpyで構造見る限りpubulicで変更可能だった -->
         <maxPawnsToSpawn>30</maxPawnsToSpawn> <!-- 一度の生成数, 同上 -->
-        <startingIngredientCount>1000</startingIngredientCount>
+        <startingIngredientCount>5000</startingIngredientCount>
         <maxIngredientCount>1000</maxIngredientCount>
         <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
         <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
