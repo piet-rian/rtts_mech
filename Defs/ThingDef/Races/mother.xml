@@ -53,7 +53,7 @@
     <comps>
       <li Class="CompProperties_MechCarrier">
         <spawnPawnKind>RTTS_Mech_children</spawnPawnKind> <!-- 小型ジェットスター的なやつを生成する -->
-        <fixedIngredient>RTTS_STAR_PIECE</fixedIngredient>
+        <fixedIngredient>Steel</fixedIngredient>
         <costPerPawn>50</costPerPawn>
         <cooldownTicks>6000</cooldownTicks> <!-- 再生成のクールダウン, ILSpyで構造見る限りpubulicで変更可能だった -->
         <maxPawnsToSpawn>30</maxPawnsToSpawn> <!-- 一度の生成数, 同上 -->
