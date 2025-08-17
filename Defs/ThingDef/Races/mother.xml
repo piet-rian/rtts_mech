@@ -58,7 +58,7 @@
         <cooldownTicks>6000</cooldownTicks> <!-- 再生成のクールダウン, ILSpyで構造見る限りpubulicで変更可能だった -->
         <maxPawnsToSpawn>30</maxPawnsToSpawn> <!-- 一度の生成数, 同上 -->
         <startingIngredientCount>5000</startingIngredientCount>
-        <maxIngredientCount>1000</maxIngredientCount>
+        <maxIngredientCount>1500</maxIngredientCount>
         <spawnEffecter>WarqueenWarUrchinsSpawned</spawnEffecter>
         <spawnedMechEffecter>WarUrchinSpawned</spawnedMechEffecter>
         <attachSpawnedEffecter>true</attachSpawnedEffecter>

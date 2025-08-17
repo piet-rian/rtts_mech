@@ -58,7 +58,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>5000</count>
+        <count>1500</count>
       </li>
     </ingredients>
   </RecipeDef>
