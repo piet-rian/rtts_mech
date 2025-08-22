@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Mechlink -->
+  <ThingDef ParentName="MechanitorImplantBase">
+    <defName>RTTS_mech_Mechlink</defName>
+    <label>starlink</label>
+    <description>TODO</description>
+    <thingClass>Mechlink</thingClass>
+    <descriptionHyperlinks>
+      <HediffDef>MechlinkImplant</HediffDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Beauty>-4</Beauty>
+      <Mass>1</Mass>
+      <MarketValue>500</MarketValue>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <graphicData>
+      <texPath>Implant/starlink</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.65</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>InstallMechlink</useJob>
+        <useLabel>Install {0_label} to become mechanitor</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <compClass>CompUseEffect_InstallImplantMechlink</compClass>
+        <hediffDef>MechlinkImplant</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <requiresPsychicallySensitive>false</requiresPsychicallySensitive>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechlinkInstalled</soundOnUsed>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

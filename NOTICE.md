@@ -32,6 +32,10 @@
 
 - <https://www.flaticon.com/free-icon/star_1213236>
 
+### スターリンク
+
+- <https://www.flaticon.com/free-icon/badge_6024752>
+
 ### 充電器
 
 - <https://www.flaticon.com/free-icon/clear-night_13883351>

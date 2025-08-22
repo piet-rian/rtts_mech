@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- 固有メカリンク作成 -->
+
+  <!-- * ワークタイプは定義済みなので省略 * -->
+
+  <!-- 変換レシピそのものベース -->
+  <RecipeDef>
+    <defName>RTTS_STARLINK_1x</defName>
+    <label>create starlink</label>
+    <description>create starlink.</description>
+
+    <jobString>creating starlink.</jobString>
+    <effectWorking>Sculpt</effectWorking>
+    <soundWorking>Recipe_Sculpt</soundWorking>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Artistic</workSkill> <!-- レシピは芸術関連の括りにいれる -->
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RTTS_STAR_PIECE</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Mechlink</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+
+    <workAmount>10000</workAmount>
+
+    <products>
+      <RTTS_mech_Mechlink>1</RTTS_mech_Mechlink>
+    </products>
+
+    <researchPrerequisites>
+      <li>RTTS_RESEARCH_PROJECT_1T</li>
+      <li>StandardMechtech</li>
+    </researchPrerequisites>
+
+  </RecipeDef>
+
+</Defs>
