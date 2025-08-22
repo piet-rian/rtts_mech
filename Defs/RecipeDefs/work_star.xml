@@ -72,9 +72,13 @@
             <li>RTTS_STAR_PIECE</li>
           </thingDefs>
         </filter>
-        <count>500</count>
+        <count>300</count>
       </li>
     </ingredients>
+
+    <workAmount>1800</workAmount> <!-- 培養開始時の作業量 -->
+    <gestationCycles>3</gestationCycles> <!-- 培養サイクル数, x3 なのでトータル3日ぐらい -->
+    <formingTicks>60000</formingTicks> <!-- 培養サイクル一回あたりの時間, 24時間 -->
 
     <!-- 成果物(本レシピの場合は培養されるメカノイド) -->
     <products>
