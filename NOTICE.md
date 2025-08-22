@@ -39,7 +39,3 @@
 ### 効果音
 
 - <https://145.rei-yumesaki.net/article/427522280.html>
-
-### 今後使うかもしれないのでとりあえずでメモしてあるもの
-
-<https://www.flaticon.com/free-icon/star_9278536>

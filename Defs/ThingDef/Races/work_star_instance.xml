@@ -39,7 +39,7 @@
     </race>
 
     <!-- レシピとか研究欄とかで表示されるアイコンとその拡大スケール -->
-    <uiIconPath>UI/GammaStar</uiIconPath>
+    <uiIconPath>UI/WorkStar</uiIconPath>
     <uiIconScale>1</uiIconScale>
 
   </ThingDef>
