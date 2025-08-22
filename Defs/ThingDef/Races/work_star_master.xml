@@ -44,7 +44,7 @@
     </race>
 
     <!-- レシピとか研究欄とかで表示されるアイコンとその拡大スケール -->
-    <uiIconPath>UI/BetaStar</uiIconPath>
+    <uiIconPath>UI/MasterStar</uiIconPath>
     <uiIconScale>1</uiIconScale>
 
   </ThingDef>

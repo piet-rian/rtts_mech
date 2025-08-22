@@ -28,6 +28,10 @@
 
 - <https://www.flaticon.com/free-icon/star_3212666>
 
+### マスターワーク
+
+- <https://www.flaticon.com/free-icon/star_1213236>
+
 ### 充電器
 
 - <https://www.flaticon.com/free-icon/clear-night_13883351>
